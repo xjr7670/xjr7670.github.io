@@ -25,7 +25,6 @@
 35. [Mininova](http://www.mininova.org/)
 36. [IMDb](http://www.imdb.com/)
 37. [Infographic Design](http://nowsourcing.com/)
-38. [网络电视直播\|卫星电视网络在线直播](http://www.41478.com/)
 39. [七彩英语](http://www.qcenglish.com/)
 40. [免费英文电子书](http://www.gutenberg.org/)
 41. [EXCEL技巧网](http://www.exceltip.net/)
