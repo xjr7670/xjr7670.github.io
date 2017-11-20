@@ -173,3 +173,4 @@
 218. [MathPage](http://www.mathpages.com/)
 219. [rarbg.is/资源分享](https://rarbg.is/)
 220. [Datahub](https://datahub.io)
+221. [python-course](https://www.python-course.eu/)
