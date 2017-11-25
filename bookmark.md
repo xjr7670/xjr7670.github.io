@@ -174,3 +174,5 @@
 219. [rarbg.is/资源分享](https://rarbg.is/)
 220. [Datahub](https://datahub.io)
 221. [python-course](https://www.python-course.eu/)
+222. [AnalyticsVidhya](https://www.analyticsvidhya.com)
+223. [ArchLinux](https://www.archlinux.org)
