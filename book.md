@@ -154,3 +154,4 @@
 1. 《Python数据挖掘－概念、方法与实践》—— [美]Megan Squire 2018年01月06日
 1. 《警世通言》 —— 冯梦龙 2018年3月5日
 1. 《Chrome扩展及应用开发》-- Sneezry 2018年3月25日
+1. 《Mastering Machine Learning with Scikit-Learn》-- Gavin Hackeling 2018年4月16日
