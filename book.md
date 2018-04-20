@@ -155,3 +155,4 @@
 1. 《警世通言》 —— 冯梦龙 2018年3月5日
 1. 《Chrome扩展及应用开发》-- Sneezry 2018年3月25日
 1. 《Mastering Machine Learning with Scikit-Learn》-- Gavin Hackeling 2018年4月16日
+1. 《机器学习实战》-- [美] Peter Harrington 2018年4月20日
