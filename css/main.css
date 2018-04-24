@@ -1,0 +1,30 @@
+body {
+	margin: 40px auto;
+	width: 75%;
+}
+
+.page-header {
+	text-align: center;
+	border-bottom: 1px solid gray;
+}
+
+h1 {
+	color: blue;
+}
+
+.row {
+	margin: 10px auto;
+}
+
+.card {
+	width: 45%;
+	margin: 10px auto;
+}
+
+.card :hover {
+	background-color: grey;
+}
+
+.card-title a:hover {
+	background-color: grey;
+}
