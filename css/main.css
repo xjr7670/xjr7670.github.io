@@ -4,12 +4,15 @@ body {
 }
 
 .page-header {
-	text-align: center;
-	border-bottom: 1px solid gray;
+	text-align: left;
+	padding-left: 4%;
+	border-bottom: 1px solid #eaecef;
 }
 
 h1 {
-	color: blue;
+	color: #0366d6;
+	font-size: 2em;
+	font-weight: bold;
 }
 
 .row {
@@ -22,9 +25,9 @@ h1 {
 }
 
 .card :hover {
-	background-color: grey;
+	background-color: #eaecef;
 }
 
-.card-title a:hover {
-	background-color: grey;
+.card-body a:hover {
+	font-weight: bold;
 }
