@@ -156,3 +156,4 @@
 1. 《Chrome扩展及应用开发》-- Sneezry 2018年3月25日
 1. 《Mastering Machine Learning with Scikit-Learn》-- Gavin Hackeling 2018年4月16日
 1. 《机器学习实战》-- [美] Peter Harrington 2018年4月20日
+1. 《Python进阶》-- 2018年4月27日
