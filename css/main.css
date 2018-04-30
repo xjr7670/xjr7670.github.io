@@ -1,0 +1,33 @@
+body {
+	margin: 40px auto;
+	width: 75%;
+}
+
+.page-header {
+	text-align: left;
+	padding-left: 4%;
+	border-bottom: 1px solid #eaecef;
+}
+
+h1 {
+	color: #0366d6;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.row {
+	margin: 10px auto;
+}
+
+.card {
+	width: 45%;
+	margin: 10px auto;
+}
+
+.card :hover {
+	background-color: #eaecef;
+}
+
+.card-body a:hover {
+	font-weight: bold;
+}
