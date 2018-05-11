@@ -1,3 +1,5 @@
+# 
+
 以chrome为例
 
 打开浏览器，打开网址：qzone.qq.com，此时按下键盘上的**F12**键，会弹出开发者工具。在这个工具里面切换到Network标签
@@ -8,13 +10,7 @@
 
 此时把视线转移到右边，通常会有5个标签：
 
----
-Headers: 
-Preview:
-Response:
-Cookies:
-Timing:
----
+`Headers` `Preview` `Response` `Cookies` `Timing`
 
 选择`Headers`，在下面的内容中，找到`Request Headers`，再从这个Headers的内容中找到cookie那个参数，冒号后面的内容就是需要的cookie内容了
 
