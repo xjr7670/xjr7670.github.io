@@ -1,6 +1,6 @@
 ```
 {
-    "代码": {
+    "IT技能": {
         "Python": ["Pandas", "Numpy", "Matplotlib", "sklearn", "Flask"],
         "JavaScript": [],
         "SQL": ["Oracle", "Mysql"],
@@ -8,7 +8,8 @@
         "HTML": [],
         "VBA": [],
         "微信小程序": [],
-        "浏览器插件": []
+        "浏览器插件": [],
+        "Other": ["Linux", "PowerBI", "PhotoShop", "Office三大件也非常熟悉"]
     },
     "爱好": [
         "写代码", 
