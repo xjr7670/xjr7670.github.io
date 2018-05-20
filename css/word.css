@@ -1,0 +1,22 @@
+.main {
+    width: 75%;
+    margin: 10px auto;
+    border: 1px dotted red;
+    overflow: hidden;
+}
+
+.word-div {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #eee;
+    border-radius: 5%;
+    margin: 2% 2% 2% 3%;
+    padding: 0 5px;
+    float: left;
+}
+
+.definition ol {
+    font-size: 12px;
+    margin: 5px 0 0 0;
+    padding-left: 18px;
+}
