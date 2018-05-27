@@ -182,3 +182,4 @@
 1. [在线看电影](http://www.dygood.cc)
 1. [爱给网－素材下载](http://www.aigei.com)
 1. [中国哲学书电子化计划](https://ctext.org/zhs)
+1. [笨笨高清影视](http://www.51wady.com)
