@@ -157,3 +157,4 @@
 1. 《Mastering Machine Learning with Scikit-Learn》-- Gavin Hackeling 2018年4月16日
 1. 《机器学习实战》-- [美] Peter Harrington 2018年4月20日
 1. 《Python进阶》-- 2018年4月27日
+1. 《集体智慧编程》-- [美]Toby Segaran 2018年5月28日
