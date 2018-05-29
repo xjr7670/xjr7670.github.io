@@ -157,7 +157,7 @@
 1. [社工](http://kf.70sec.com/)
 1. [电子书](http://www.fatiao.space/)
 1. [软件下载－国外站点](http://www.nch.com.au/)
-1. [在线视频下载](http://yipeiwu.com/)
+1. [在线视频下载](http://insxz.com/)
 1. [资源共享](http://www.ed2000.com)
 1. [Python3标准库学习](https://pymotw.com/3/)
 1. [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
