@@ -182,3 +182,5 @@
 1. [笨笨高清影视](http://www.51wady.com)
 1. [Download google play app](http://apkfind.com)
 1. [apkname.com](https://apkname.com)
+1. [TopCloud云加速](https://kopcloud.ga/)
+1. [小黑公益站](http://45.76.47.94/auth/login)
