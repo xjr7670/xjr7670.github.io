@@ -184,3 +184,6 @@
 1. [apkname.com](https://apkname.com)
 1. [TopCloud云加速](https://kopcloud.ga/)
 1. [小黑公益站](http://45.76.47.94/auth/login)
+1. [free-ss](http://free-ss.tk/)
+1. [freess](https://my.freess.today)
+1. [ss8](https://get.ss8.fun/)
