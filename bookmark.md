@@ -187,3 +187,4 @@
 1. [free-ss](http://free-ss.tk/)
 1. [freess](https://my.freess.today)
 1. [ss8](https://get.ss8.fun/)
+1. [周行行是个帅小伙](http://www.ssoouu.com/)
