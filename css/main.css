@@ -32,6 +32,13 @@ h1 {
 	font-weight: bold;
 }
 
+/* 备案 */
+.beian {
+	text-align: center;
+	margin-top: 6%;
+	bottom: 10px;
+}
+
 /*word.html页面的样式开始*/
 
 .main {
