@@ -1,0 +1,36 @@
+.main {
+    width: 75%;
+    margin: 2% auto;
+    overflow: hidden;
+}
+
+.word-div {
+    width: 200px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    margin: 2% 2% 2% 3%;
+    padding: 5px 5px;
+    float: left;
+    text-align: center;
+}
+
+.word-div:hover {
+    background-color: #eee;
+}
+
+.word {
+
+}
+
+.word .spell {
+    display: inline-block;
+}
+
+.definition ol {
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}
+
+.definition li {
+    text-align: left;
+}

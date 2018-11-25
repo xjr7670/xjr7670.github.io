@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>如何获取QQ空间cookie</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/article.css">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>如何获取QQ空间cookie</h1>
+    <div class="main">
+        <p>以Chrome为例</p>
+        <p>打开浏览器，打开网址：<a href="http://qzone.qq.com">https://qzone.qq.com</a>，此时按下键盘上的<strong>F12</strong>键，会弹出开发者工具。在这个工具里面切换到<strong>Network</strong>标签</p>
+        <p>然后输入自己的QQ账号、密码，登录进空间</p>
+        <p>此时在开发者工具的<strong>Network</strong>标签的左下角，有个<strong>Name</strong>标签页，把滚动条拉到最上面，会发现有一个只显示了自己的QQ号码的请求。用鼠标右键点击一下它</p>
+        <p>此时把视线转移到右边，通常会有5个标签：</p>
+        <p class="text-primary">Headers | Preview | Response | Cookies | Timing</p>
+        <p>选择<span class="text-primary">Headers</span>，在下面的内容中，找到<span class="text-primary">Request Headers</span>，再从这个Headers的内容中找到cookie那个参数，冒号后面的内容就是需要的cookie内容了</p>
+        <i>用Firefox的用户要注意，据我所知它的F12中是会自动把过长的值隐藏的，要把隐藏的内容也展开，这样才会得到完整的cookie</i>
+    </div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
