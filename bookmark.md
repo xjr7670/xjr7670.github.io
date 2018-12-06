@@ -117,7 +117,7 @@
 1. [PythonBooks](http://pythonbooks.revolunet.com/)
 1. [fullstackpython](http://www.fullstackpython.com/)
 1. [IT eBooks](http://www.it-ebooks.info/)
-1. [AioMp3 MP3音乐下载](http://www.aiomp3.com/)
+1. ~~[AioMp3 MP3音乐下载](http://www.aiomp3.com/)~~
 1. [BT蚂蚁](http://www.btany.com/)
 1. [电影大全](http://www.dydq123.com/)
 1. [超重神－日本电影漫画相关](https://www.akiba-online.com)
@@ -187,3 +187,4 @@
 1. [VPN Chrome](https://free-vpn.github.io/chrome/)
 1. [不太灵影视](https://bt0.com)
 1. [计算机书籍控](http://bestcbooks.com/)
+1. [mp3音乐下载](https://www.mp3juices.cc/)
