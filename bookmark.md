@@ -189,3 +189,4 @@
 1. [计算机书籍控](http://bestcbooks.com/)
 1. [mp3音乐下载](https://www.mp3juices.cc/)
 1. [高清MP4](http://www.mp4ba.com/)
+1. [interactivepython](interactivepython.org/)
