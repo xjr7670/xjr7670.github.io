@@ -4,7 +4,6 @@
 1. [Code.org](http://www.code.org/)
 1. [Code Monster from Crunchzilla](http://www.crunchzilla.com/code-monster)
 1. [BBC - World Service](http://www.bbc.co.uk/radio/player/bbc_world_service)
-1. [站长学习网](http://www.adminxue.com/)
 1. [我要自学网](http://www.51zxw.net/)
 1. [CSDN.NET](http://www.csdn.net/)
 1. [中国经济网](http://www.ce.cn/)
@@ -16,7 +15,7 @@
 1. [素材中国](http://www.sccnn.com/)
 1. [PS联盟](http://www.68ps.com/)
 1. [itTV - 国际乒乓球联合会](http://www.ittf.com/ittv/)
-1. [黑客基地](http://www.hackol.com/)
+1. ~~[黑客基地](http://www.hackol.com/)~~
 1. [BBC](http://www.bbc.com/)
 1. [全国公共广播电台](http://www.npr.org/)
 1. [CNN](http://edition.cnn.com/)
