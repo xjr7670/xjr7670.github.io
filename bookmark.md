@@ -15,7 +15,7 @@
 1. [调查派](http://www.diaochapai.com/)
 1. [素材中国](http://www.sccnn.com/)
 1. [PS联盟](http://www.68ps.com/)
-1. [[itTV - 国际乒乓球联合会]](http://www.ittf.com/ittv/)
+1. [itTV - 国际乒乓球联合会](http://www.ittf.com/ittv/)
 1. [黑客基地](http://www.hackol.com/)
 1. [BBC](http://www.bbc.com/)
 1. [全国公共广播电台](http://www.npr.org/)
@@ -95,7 +95,7 @@
 1. [在线编程挑战](https://leetcode.com)
 1. [下载play应用](https://apkpure.com/)
 1. [妈蛋表情网](http://www.itlun.cn/)
-1. [白雲深處人家](http://www.byscrj.com/)
+1. ~~[白雲深處人家](http://www.byscrj.com/)~~
 1. [微信热榜](http://werank.cn/)
 1. [医药百科](http://www.a-hospital.com/)
 1. [虫部落（搜索集合）](http://www.chongbuluo.com/)
@@ -155,7 +155,7 @@
 1. [资源共享](http://www.ed2000.com)
 1. [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
 1. [程序员的读书汇](http://www.finelybook.com/)
-1. [比特鱼](http://www.bitfish8.net)
+1. ~~[比特鱼](http://www.bitfish8.net)~~
 1. [现代简明魔法－一个IT学习网站](http://www.nowamagic.net/)
 1. [加州理工学院的机器学习MOOC](http://work.caltech.edu/telecourse.html)
 1. [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
