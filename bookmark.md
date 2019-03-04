@@ -48,7 +48,7 @@
 1. [在线电视直播](http://www.123456789.tv)
 1. [西班牙语西班牙](http://www.myeses.com/)
 1. [6V电影网](http://www.6vdy.com/)
-1. ~[历届奥斯卡获奖电影不完全手册](http://www.oscar1929.com/)~
+1. ~~[历届奥斯卡获奖电影不完全手册](http://www.oscar1929.com/)~~
 1. [cnbeta](http://www.cnbeta.com/)
 1. [Donews](http://www.donews.com/)
 1. [计世资讯](http://www.ccwresearch.com.cn/)
