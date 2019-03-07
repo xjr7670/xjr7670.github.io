@@ -138,7 +138,6 @@
 1. [网络安全培训](http://www.51ean.com)
 1. [Ebook-dl](http://ebook-dl.com/)
 1. [DiscoverSDK-Tool for Developers](http://www.discoversdk.com/)
-1. [社工](http://kf.70sec.com/)
 1. [电子书](http://www.fatiao.space/)
 1. [软件下载－国外站点](http://www.nch.com.au/)
 1. [在线视频下载](http://insxz.com/)
