@@ -112,7 +112,6 @@
 1. [数据分析网](http://www.afenxi.com/)
 1. [深度开源](http://www.open-open.com/)
 1. [在线web调试工具](http://coolaf.com/)
-1. [坏235资源网站大全](http://www.huai235.com/)
 1. [Notedown something it](http://notedown.cn/)
 1. [万能查询和在线工具](http://umr.igge.ga/)
 1. [电影核工厂](http://www.omdy.info/)
