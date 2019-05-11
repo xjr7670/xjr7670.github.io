@@ -1,3 +1,3 @@
-1. [如何获取QQ空间cookie](http://xjr7670.github.io/articles/how-to-get-qzone-cookie.html)
-2. [俗语来由](http://xjr7670.github.io/articles/common-saying.html)
-3. [落花](http://xjr7670.github.io/articles/luo-hua.html)
+1. [如何获取QQ空间cookie](./articles/how-to-get-qzone-cookie.html)
+2. [俗语来由](./articles/common-saying.html)
+3. [落花](./articles/luo-hua.html)
