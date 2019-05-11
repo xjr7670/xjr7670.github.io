@@ -55,7 +55,7 @@
 1. [芳思小语种](http://www.chinawaiyu.com/)
 1. [开课吧](http://www.kaikeba.com/)
 1. [互联网分析沙龙](http://www.techxue.com/)
-1. [实验教－IT教学](https://www.shiyanlou.com/)
+1. [实验楼－IT教学](https://www.shiyanlou.com/)
 1. [HTML5中文网](http://www.html5china.com/)
 1. [IT网址导航](http://dh.woshipm.com/)
 1. [MOOC公开课](http://www.mooc.cn/)
