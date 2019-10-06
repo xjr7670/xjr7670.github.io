@@ -165,3 +165,6 @@
 1. [realpython](https://realpython.com/)
 1. [aity-fq](https://aity.tk/)
 1. [BeyeNETWORK](http://www.b-eye-network.com)
+1. [考试酷－电子作业与在线考试系统](https://www.examcoo.com)
+1. [毒鸡汤](https://8zt.cc/)
+1. [渣男：说话的艺术](https://lovelive.tools/)
