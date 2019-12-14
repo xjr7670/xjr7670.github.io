@@ -108,7 +108,6 @@
 1. [在线web调试工具](http://coolaf.com/)
 1. [Notedown something it](http://notedown.cn/)
 1. [万能查询和在线工具](http://umr.igge.ga/)
-1. [电影核工厂](http://www.omdy.info/)
 1. [统计之都](http://cos.name/)
 1. [妈蛋表情网](http://md.itlun.cn/)
 1. [搞笑gif](http://www.gaoxiaogif.com/)
