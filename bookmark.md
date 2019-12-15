@@ -172,3 +172,5 @@
 1. [斗图表情包在线制作](https://www.52doutu.cn/)
 1. [movie download](https://p2pguru.com/)
 1. [movie download2](https://yts.lt/)
+1. [BT之家](http://www.6btbtt.com/)
+1. [西西站](http://www.xxizhan.com/)
