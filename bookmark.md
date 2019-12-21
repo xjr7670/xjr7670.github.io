@@ -174,3 +174,4 @@
 1. [movie download2](https://yts.lt/)
 1. [BT之家](http://www.6btbtt.com/)
 1. [西西站](http://www.xxizhan.com/)
+1. [联合开发网](http://www.pudn.com/)
