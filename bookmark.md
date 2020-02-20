@@ -177,3 +177,4 @@
 1. [联合开发网](http://www.pudn.com/)
 1. [万影网](http://www.4sdyy.com/)
 1. [灰狐－资源站](http://huihoo.com)
+1. [chrome-extension-download](https://chrome-extension-downloader.com/)
