@@ -176,3 +176,4 @@
 1. [灰狐－资源站](http://huihoo.com)
 1. [chrome-extension-download](https://chrome-extension-downloader.com/)
 1. [红白机游戏](https://www.yikm.net/)
+1. [EPUBW](https://www.epubw.com/)
