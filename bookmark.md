@@ -178,3 +178,7 @@
 1. [红白机游戏](https://www.yikm.net/)
 1. [EPUBW](https://www.epubw.com/)
 1. [在线工具集](https://tool.lu)
+1. [网页文章推送到 kindle](https://pushtokindle.fivefilters.org/)
+1. [移动政务](http://mgov.cn/)
+1. [标准网](https://www.biaozhun.org/)
+1. [建标库](http://www.jianbiaoku.com/)
