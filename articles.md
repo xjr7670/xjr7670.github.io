@@ -3,3 +3,4 @@
 3. [落花](./articles/luo-hua.html)
 4. [戏答元珍](./articles/xi-da-yuan-zhen.html)
 5. [踏莎行](./articles/ta-suo-xing.html)
+6. [漂泊](./articles/piao-bo.html)
