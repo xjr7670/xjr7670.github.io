@@ -184,3 +184,4 @@
 1. [建标库](http://www.jianbiaoku.com/)
 1. [MP3在线切割](https://mp3cut.net/)
 1. [中国哲学书电子化计划](https://ctext.org/)
+1. [Image Metadata Viewer](http://exif.regex.info/exif.cgi)
