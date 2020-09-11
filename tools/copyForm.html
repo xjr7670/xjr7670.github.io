@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Copy From Here</title>
+        <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div class="container" id="copyForm">
+            <ol>
+                <li v-for="(item, index) in todos">
+                    <div>
+                        <textarea rows="5" cols="60" name="txtArea" v-model="msg[index]"></textarea> 
+                        <input type="button" name="copy" value="Copy" @click="copy(index)" />
+                        <input type="button" name="minus" value="-" @click="minus(index)" />
+                        <input type="button" name="plus" value="+" @click="add(index)" />
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </body>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: "#copyForm",
+            data: {
+                todos: [""],
+                msg: {
+                    0: "",
+                }
+            },
+            methods: {
+                copy: function(index) {
+                    var txt = document.getElementsByName("txtArea")[index];
+                    txt.select();
+                    document.execCommand("Copy");
+                    console.log(this.msg[index] + " 复制成功！");
+                },
+                minus: function(index) {
+                    if (this.todos.length > 1) {
+                        this.todos.pop();
+                    }
+                },
+                add: function(index) {
+                    this.todos.push("");
+                }
+            }
+        });
+    </script>
+</html>
