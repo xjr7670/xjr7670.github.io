@@ -179,3 +179,5 @@
 1. [恩京书房](https://www.enjing.com/)
 1. [我爱电子书](https://www.52doc.com/)
 1. [电子书](http://cn.epubee.com/)
+1. [Talking Politics](https://www.talkingpoliticspodcast.com/)
+1. [newstalk](https://www.newstalk.com/)
