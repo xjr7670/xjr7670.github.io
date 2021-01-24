@@ -181,3 +181,4 @@
 1. [电子书](http://cn.epubee.com/)
 1. [Talking Politics](https://www.talkingpoliticspodcast.com/)
 1. [newstalk](https://www.newstalk.com/)
+1. [油猴脚本搜索下载](https://greasyfork.org/zh-TW)
