@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>商品管理</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">    
+    <script src="./js/funcCollections.js"></script>
+    <style type="text/css">
+        .container {
+            height: 65%;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        button {
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div id="editor" class="row">
+            <textarea autofocus="true" cols="120" name="edit_area" rows="20"></textarea>
+        </div>
+        <dir class="btn-button" role="group">
+            <button type="button" id="btn-clear" name="clear" class="btn btn-default">Clear</button>
+            <button type="button" id="btn-copy" name="copy" class="btn btn-default">Copy</button>
+        </dir>
+    </div>
+<script type="text/javascript">
+    var clearBtn = document.getElementById('btn-clear');
+    var textarea = document.querySelector('div#editor > textarea');
+    clearBtn.addEventListener('click', function(e) {
+        textarea.value = "";
+    }, false);
+
+    var copyBtn = document.getElementById('btn-copy');
+    copyBtn.addEventListener('click', function(e) {
+        textarea.select();
+        document.execCommand("Copy");
+    }, false);
+</script>
+</body>
+</html>
