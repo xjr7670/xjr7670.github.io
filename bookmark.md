@@ -183,3 +183,5 @@
 1. [newstalk](https://www.newstalk.com/)
 1. [油猴脚本搜索下载](https://greasyfork.org/zh-TW)
 1. [七年影视](http://www.delicell.net/)
+1. [chiphell](https://www.chiphell.com/)
+
