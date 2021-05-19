@@ -185,3 +185,4 @@
 1. [七年影视](http://www.delicell.net/)
 1. [chiphell](https://www.chiphell.com/)
 1. [dataversity](https://www.dataversity.net/)
+1. [国家标准全文公开](http://openstd.samr.gov.cn/bzgk/gb/index)
