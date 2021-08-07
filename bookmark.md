@@ -189,3 +189,4 @@
 1. [音乐 download](https://www.hifini.com/)
 1. [在线 DDL 转换](http://www.sqlines.com/online)
 1. [在线文件格式转换](https://convertio.co/)
+1. [LoreFree-电子书共享社区](https://ebook2.lorefree.com)
