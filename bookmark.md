@@ -191,3 +191,4 @@
 1. [在线文件格式转换](https://convertio.co/)
 1. [LoreFree-电子书共享社区](https://ebook2.lorefree.com)
 1. [BT之家](https://btbtt16.com/)
+2. [Linux C 编程一站式学习](https://akaedu.github.io/book/index.html)
