@@ -193,3 +193,5 @@
 1. [BT之家](https://btbtt16.com/)
 2. [Linux C 编程一站式学习](https://akaedu.github.io/book/index.html)
 3. [Monkeytype-打字速度测试](https://monkeytype.com/)
+4. [typelit-英文小说打字练习](https://www.typelit.io/)
+5. [qwerty-learn-边背单词边练打字](https://qwerty.kaiyi.cool/)
