@@ -81,7 +81,6 @@
 1. [医药百科](http://www.a-hospital.com/)
 1. [虫部落（搜索集合）](http://www.chongbuluo.com/)
 1. [好讀](http://www.haodoo.net/)
-1. [读远](http://readcolor.com/)
 1. [500 Lines or Less](http://aosabook.org/en/500L/)
 1. [用药助手](http://drugs.dxy.cn/)
 1. [Cornell University Library](http://arxiv.org/)
