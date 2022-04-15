@@ -200,3 +200,4 @@
 1. [中国高校外语慕课平台](https://moocs.unipus.cn)
 1. [yesmovies.id](https://yesmovies.id)
 1. [tubitv.com](https://tubitv.com)
+1. [国家教育资源公共服务平台](https://eduyun.cn/)
