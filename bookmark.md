@@ -202,3 +202,4 @@
 1. [tubitv.com](https://tubitv.com)
 1. [国家教育资源公共服务平台](https://eduyun.cn/)
 1. [剑桥写作与提高](https://writeandimprove.com/)
+1. [WordReference](https://www.wordreference.com/)
