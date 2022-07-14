@@ -232,3 +232,4 @@
 1. 《拥抱战败 第二次世界大战后的日本》2022年6月30日
 1. Spirit of Adventure —— RH Disney (EDT)/ RH Disney (ILT) 2022年7月1日
 1. Merida's Wish —— Gilson, David; Jones, Jasmine 2022年7月7日
+1. 《富爸爸穷爸爸》—— 罗伯特·清崎，莎伦·莱希特 2022年7月14日
