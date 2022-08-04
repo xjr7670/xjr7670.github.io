@@ -206,3 +206,4 @@
 1. [ck12](https://www.ck12.org)
 1. [English-e-Reader](https://english-e-reader.net/)
 2. [Stanley Colors - Comics and Stuff](http://www.stanleycolors.com/)
+1. [Online document scanner](https://tuguoba.com)
