@@ -211,3 +211,6 @@
 1. [American English](https://americanenglish.state.gov/)
 1. [ikuuu club](https://ikuuu.club/)
 1. [ikuuu cc](https://ikuuu.cc/)
+1. [five-minutes-with-dad](https://fiveminuteswithdad.com/)
+1. [common sense media](https://www.commonsensemedia.org/)
+1. [Time out](https://www.timeout.com/)
