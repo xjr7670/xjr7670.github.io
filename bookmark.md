@@ -214,3 +214,5 @@
 1. [five-minutes-with-dad](https://fiveminuteswithdad.com/)
 1. [common sense media](https://www.commonsensemedia.org/)
 1. [Time out](https://www.timeout.com/)
+1. [usa learns](https://www.usalearns.org/)
+1. [Open English Programs](https://www.openenglishprograms.org/)
