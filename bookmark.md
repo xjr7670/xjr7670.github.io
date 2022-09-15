@@ -192,7 +192,6 @@
 3. [Monkeytype-打字速度测试](https://monkeytype.com/)
 4. [typelit-英文小说打字练习](https://www.typelit.io/)
 5. [qwerty-learn-边背单词边练打字](https://qwerty.kaiyi.cool/)
-6. [zlibrary](https://zh.singlelogin.me/?logoutAll)
 7. [learningenglishwithoxford.com](https://learningenglishwithoxford.com/)
 8. [OxfordUniversityPress_EnglishLanguageTeaching](https://elt.oup.com/learning_resources/?cc=global&selLanguage=en&mode=hub)
 9. [ikuuu](https://ikuuu.co)
