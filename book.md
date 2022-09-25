@@ -238,4 +238,4 @@
 1. 《我在伊朗长大》 —— [伊朗] 玛赞·莱莎塔碧 2022年8月15日
 1. 《天朝的崩溃》 —— 茅海建 2022年8月25日
 1. The Adventures of Tom Sawyer -- [美] Mark Twain 2022年9月9日
-1. The Adventures of Fuckleberry Finn -- [美] Mark Twain 2022年9月25日
+1. The Adventures of Huckleberry Finn -- [美] Mark Twain 2022年9月25日
