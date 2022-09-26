@@ -214,3 +214,5 @@
 1. [hive online env](https://demo.gethue.com/hue/)
 1. [British Council Learn English](https://learnenglish.britishcouncil.org/)
 1. [English Pod](https://english-pod.com/)
+1. [Slashdot](https://slashdot.org/)
+1. [提问的智慧](https://wiki.woodpecker.org.cn/moin/AskForHelp)
