@@ -165,7 +165,6 @@
 1. [标准网](https://www.biaozhun.org/)
 1. [建标库](http://www.jianbiaoku.com/)
 1. [MP3在线切割](https://mp3cut.net/)
-1. [中国哲学书电子化计划](https://ctext.org/)
 1. [Image Metadata Viewer](http://exif.regex.info/exif.cgi)
 1. [恩京书房](https://www.enjing.com/)
 1. [我爱电子书](https://www.52doc.com/)
