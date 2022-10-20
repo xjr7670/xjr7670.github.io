@@ -239,3 +239,4 @@
 1. 《天朝的崩溃》 —— 茅海建 2022年8月25日
 1. The Adventures of Tom Sawyer -- [美] Mark Twain 2022年9月9日
 1. The Adventures of Huckleberry Finn -- [美] Mark Twain 2022年9月25日
+1. Raggedy Ann Stories -- [美] Johnny Gruelle 2022 年 9 月 30 日
