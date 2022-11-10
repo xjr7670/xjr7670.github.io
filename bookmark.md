@@ -206,3 +206,4 @@
 1. [提问的智慧](https://wiki.woodpecker.org.cn/moin/AskForHelp)
 1. [z-lib镜像](https://www.ooopn.com/tool/zlibrary/)
 1. [电子书导航](https://nav.yibook.org/)
+1. [谷歌hub](https://www.google-hub.com/)
