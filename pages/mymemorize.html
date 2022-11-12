@@ -8,17 +8,22 @@
     <script type="text/javascript" src="../js/vue.js"></script>
     <script type="text/javascript" src="../js/elementui-index.js"></script>
     <style type="text/css">
-        #text {
+        .format {
             text-align: center;
-            /* margin: 5% 20%; */
-            left: 30%;
-            top: 20%;
             padding: 3%;
             border: dotted 1px #E6A23C;
             height: 180px;
             width: 42%;
             position: absolute;
             font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+        }
+        #count {
+            left: 30%;
+            top: 20%;
+        }
+        #countdown {
+            left: 30%;
+            top: 50%;
         }
         .title {
             font-size: 32px;
@@ -33,13 +38,22 @@
 </head>
 <body>
     <el-container id="main-container" center=true>
-        <div id="text">
+        <div id="count" class="format">
             <el-row class="title">
                 <span>认识的第 {{ daysCount }} 天 - 第 {{ totalSeconds }} 秒</span>
             </el-row>
             <el-row></el-row>
             <el-row class="subTitle">
                 <span> {{ floorDays }} 天，{{ hours }} 小时，{{ minutes }} 分钟，{{ seconds }} 秒</span>            
+            </el-row>
+        </div>
+        <div id="countdown" class="format">
+            <el-row class="title">
+                <span>离 {{countDownTotal}} 天还剩</span>
+            </el-row>
+            <el-row></el-row>
+            <el-row class="subTitle">
+                <span> {{ actualDays }} 天，{{ actualHours }} 小时，{{ actualMinutes }} 分钟，{{ actualSeconds }} 秒</span>            
             </el-row>
         </div>
     </el-container>
@@ -56,7 +70,15 @@
                 seconds: 0,
                 startDate: new Date("2021-09-13 00:00:00"),
                 startTime: new Date("2021-09-13 17:17:17"),
-                timer: ''
+                timer: null,
+                countDownTotal: 3000,
+                countDownStartDate: new Date("2023-01-01 00:00:00"),
+                actualDays: 0,
+                actualHours: 0,
+                actualMinutes: 0,
+                actualSeconds: 0,
+                timer2: null,
+                secondsOneDay: 24 * 3600,
             },
             methods: {
                 updateTime() {
@@ -69,10 +91,21 @@
                     this.hours = now.getHours();
                     this.minutes = now.getMinutes();
                     this.seconds = now.getSeconds();
+                },
+                decreaseTime() {
+                    var now = new Date();
+                    var countDownTotalSeconds = this.countDownTotal * this.secondsOneDay;
+                    var secondsGap = (this.countDownStartDate.getTime() + countDownTotalSeconds * 1000 - now.getTime()) / 1000;
+                    this.actualDays = Math.floor(secondsGap / 24 / 3600);
+                    this.actualHours = Math.floor(secondsGap % this.secondsOneDay / 3600);
+                    this.actualMinutes = Math.floor(secondsGap % this.secondsOneDay % 3600 / 60);
+                    this.actualSeconds = Math.ceil(secondsGap % this.secondsOneDay % 3600 % 60);
+                    // this.actualHours = 
                 }
             },
             mounted: function() {
                 this.timer = setInterval(this.updateTime, 1000);
+                this.timer2 = setInterval(this.decreaseTime, 1000);
             }
         });
     </script>
