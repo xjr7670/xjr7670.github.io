@@ -207,3 +207,5 @@
 1. [z-lib镜像](https://www.ooopn.com/tool/zlibrary/)
 1. [电子书导航](https://nav.yibook.org/)
 1. [谷歌hub](https://www.google-hub.com/)
+1. [Math is fun](https://www.mathsisfun.com/)
+1. [数学乐](https://shuxuele.com)
