@@ -209,3 +209,4 @@
 1. [谷歌hub](https://www.google-hub.com/)
 1. [Math is fun](https://www.mathsisfun.com/)
 1. [数学乐](https://shuxuele.com)
+1. [英语新闻分级阅读](https://breakingnewsenglish.com/)
