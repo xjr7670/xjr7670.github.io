@@ -242,3 +242,4 @@
 1. Raggedy Ann Stories -- [美] Johnny Gruelle 2022 年 9 月 30 日
 1. 《资本论》 —— [德]卡尔•马克思；何小禾编译 2022 年 11 月 5 日
 1. 《塔木德——犹太人的经商与处事圣经》 —— 邹文豪 编译 2022 年 11 月 8 日
+1. The Red Badges of Courage and Other Stories -- [美] Stephen Crane 2022 年 11 月 27 日 
