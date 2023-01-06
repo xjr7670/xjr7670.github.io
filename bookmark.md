@@ -213,3 +213,6 @@
 1. [Code Pen](https://codepen.io/)
 1. [Front-end Editor](https://www.fronteditor.dev/)
 1. [Free kids books](https://freekidsbooks.org/)
+1. [learnenglish-new](https://learnenglish-new.com/)
+1. [free Graded Readers](https://freegradedreaders.com/)
+1. [Online Reading for Fluency](https://or4f.org/)
