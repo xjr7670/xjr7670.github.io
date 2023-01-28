@@ -219,3 +219,4 @@
 1. [计算机专业学习路线](https://hackway.org/)
 1. [z-library备份](https://zlib.cydiar.com/)
 1. [Anna's Archive](https://annas-archive.org/)
+1. [道人家](http://www.daorenjia.com/)
