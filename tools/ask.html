@@ -1,0 +1,106 @@
+<!DOCTYPE xhtml>
+<html>
+   <head>
+      <meta charset='utf-8'>
+      <title>Ask Chatgpt</title>
+      <style>
+         body {
+            background-color: #77a9ab;
+         }
+         .textInput {
+            width:  60%;
+            height: 25px;
+         }
+         #main {
+            text-align: center;
+         }
+         #question {
+            background-color: #FAFAFA;
+            width: 100%;
+            height: 40px;
+            position: fixed;
+            top: 20px;
+            padding-top: 20px;
+         }
+         #answer {
+            padding-top: 68px;
+            text-align: left;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            padding-left: 25%;
+         }
+         .result {
+            width: 600px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="main">
+         <div id="question">
+            <input type="text" class="textInput" width="70px" />
+            <input type="submit" onclick="myAjax();" name="send" value="Send" />
+         </div>
+         <div id="answer">
+                
+         </div>
+      </div>
+      <script type="text/javascript" src='./marked.min.js'></script>
+      <script>
+         function fnProcResult(question, answer) {
+            var resultDiv = document.createElement('div');
+            resultDiv.setAttribute('class', 'result');
+
+            var questionDiv = document.createElement('h3');
+            var qMarkSpan = document.createElement('span');
+            qMarkSpan.innerHTML = 'Q:  ';
+            var questionSpan = document.createElement('span');
+            questionSpan.innerText = question;
+
+            var answerDiv = document.createElement('div');
+            var answerSpan = document.createElement('span');            
+            answerSpan.innerHTML = answer + '<br/><br/>';
+
+            questionDiv.appendChild(qMarkSpan);
+            questionDiv.appendChild(questionSpan);
+            answerDiv.appendChild(answerSpan);
+
+            resultDiv.appendChild(questionDiv);
+            resultDiv.appendChild(answerDiv);
+
+            document.getElementById('answer').appendChild(resultDiv);
+         }
+
+         function myAjax() {
+            var question = document.querySelector('#question>input').value;
+            if (question == "") {
+               alert("输入为空!");
+               return;
+            }
+            var postData = JSON.stringify({"question": question});
+            var xhr = new XMLHttpRequest()
+            url = 'https://service-hc6yomku-1251839338.sg.apigw.tencentcs.com/release/chat' 
+            // url = 'http://localhost:5000/posttest'
+            xhr.open('POST', url, true);
+            xhr.timeout = 30000;
+            xhr.setRequestHeader(
+               "Content-type","application/x-www-form-urlencoded"
+            );            
+            xhr.send(postData);
+            xhr.onreadystatechange = function(){
+                // 判断 服务器与客户端进行到哪步了
+                if(xhr.readyState == 4){
+                    if(xhr.status ==200){
+                        let res = JSON.parse(xhr.responseText).content;
+                        res = res.replaceAll('\n', '<br/>');
+                        fnProcResult(question, res);
+                    }
+                    else{
+                        fnProcResult('请求失败！', xhr.responseText);
+                    }
+                }
+            }
+        }
+      </script>
+   </body>
+</html>
