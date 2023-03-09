@@ -33,6 +33,12 @@
          .result {
             width: 600px;
          }
+         #question>input:nth-child(2) {
+            background-color: #409eff;
+            color: #fff;
+            border-color: #409eff;
+            border-radius: 10%;
+         }         
       </style>
    </head>
    <body>
@@ -47,6 +53,14 @@
       </div>
       <script type="text/javascript" src='./marked.min.js'></script>
       <script>
+         function changeBtnTheme(frontColor, backColor) {
+             var btn = document.getElementsByName('send')[0];
+             btn.style.color = frontColor;
+             btn.style.backgroundColor = backColor;
+             btn.style.borderColor = backColor;
+             changeBtnTheme('#ffffff', '#409eff');
+         }
+
          function fnProcResult(question, answer) {
             var resultDiv = document.createElement('div');
             resultDiv.setAttribute('class', 'result');
@@ -87,6 +101,7 @@
                "Content-type","application/x-www-form-urlencoded"
             );            
             xhr.send(postData);
+            changeBtnTheme('Black', 'White');
             xhr.onreadystatechange = function(){
                 // 判断 服务器与客户端进行到哪步了
                 if(xhr.readyState == 4){
