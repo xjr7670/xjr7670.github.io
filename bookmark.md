@@ -226,3 +226,4 @@
 1. [FileZN](https://filezn.com/)
 1. [libgen](https://libgen.yncjkj.com/)
 1. [vdoc.pub](https://vdoc.pub/)
+1. [压缩图](https://www.yasuotu.com)
