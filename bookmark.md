@@ -226,3 +226,4 @@
 1. [vdoc.pub](https://vdoc.pub/)
 1. [压缩图](https://www.yasuotu.com)
 1. [云铺子](https://www.yunpz.net)
+1. [小白盘](https://www.xiaobaipan.com/)
