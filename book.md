@@ -261,4 +261,4 @@
 1. Alice's Adventures in Wonderland -- Lewis Carroll 2023 年 06 月 27 日
 1. The Wonderful Wizard of Oz L. Frank Baum 2023 年 07 月 15 日
 1. 《繁荣与停滞》—— [日] 伊藤隆敏 2023 年 07 月 29 日
-
+1. Animal Farm -- [美] George Orwell 2023 年 08 月 21 日
