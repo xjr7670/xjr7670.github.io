@@ -264,3 +264,4 @@
 1. Animal Farm -- [美] George Orwell 2023 年 08 月 21 日
 1. 《原则》—— [美] 瑞·达利欧 2023 年 09 月 09 日
 1. 《中国的气候及其极值》 —— 商务印书馆编辑部 2023 年 09 月 11 日
+1. 《C#入门经典》 —— [美] Benjamin Perkins/Jacob Vibe Hammer/Jon D. Reid 2023 年 09 月 19 日
