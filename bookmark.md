@@ -218,5 +218,6 @@
 1. [翰墨观雅](http://hanmofengya.com/)
 1. [书法欣赏](https://www.yac8.com/)
 1. [书法字典](https://www.shufazidian.com/)
-1. [书法资料网](https://9610.com/)
+1. [书法空间](https://www.9610.com/)
+1. [词典网](https://www.cidianwang.com/)
 1. [定制表格](https://www.mygraphpaper.com/)
