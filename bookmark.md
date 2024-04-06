@@ -210,7 +210,7 @@
 1. [压缩图](https://www.yasuotu.com)
 1. [云铺子](https://www.yunpz.net)
 1. [小白盘](https://www.xiaobaipan.com/)
-1. [在线 epub 阅读]([https://app.flowoss.com/)
+1. [在线 epub 阅读](https://app.flowoss.com/)
 1. [书享家](https://www.shuxiangjia.cn/)
 1. [字幕库](https://zimuku.org/)
 1. [哔嘀影视](https://www.bdys10.com/)
