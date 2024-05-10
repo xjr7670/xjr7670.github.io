@@ -224,3 +224,4 @@
 1. [书法道](https://shufadao.com)
 1. [局域网传文件](https://easychuan.cn/)
 1. [sharedrop](https://sharedrop.io/)
+1. [Qireader-在线RSS阅读](https://www.qireader.com/)
