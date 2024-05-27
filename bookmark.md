@@ -225,4 +225,4 @@
 1. [局域网传文件](https://easychuan.cn/)
 1. [sharedrop](https://sharedrop.io/)
 1. [Qireader-在线RSS阅读](https://www.qireader.com/)
-1. [GenkiStudyResource元气日语学习资源](https://sethclydesdale.github.io/genki-study-resources/)
+1. [GenkiStudyResource元气日语学习资源](https://sethclydesdale.github.io/genki-study-resources/lessons-3rd/)
