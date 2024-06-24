@@ -227,3 +227,6 @@
 1. [Qireader-在线RSS阅读](https://www.qireader.com/)
 1. [GenkiStudyResource元气日语学习资源](https://sethclydesdale.github.io/genki-study-resources/lessons-3rd/)
 1. [Genki 3rd edition Audio 元气日语在线音频](https://t-nagano.com/projects/JapaneseGenki3rdEdAudio/)
+1. [JIPT 资源](https://www.tanos.co.uk/)
+1. [Jisho 日英词典](https://jisho.org/)
+1. [日语漫画 comic-walker](https://comic-walker.com/)
