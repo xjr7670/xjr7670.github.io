@@ -231,3 +231,4 @@
 1. [Jisho 日英词典](https://jisho.org/)
 1. [日语漫画 comic-walker](https://comic-walker.com/)
 1. [BT之家](https://www.btjiaweb.com/)
+1. [MOJi辞书-日语词典](https://www.mojidict.com/)
