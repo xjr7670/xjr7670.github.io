@@ -232,3 +232,6 @@
 1. [日语漫画 comic-walker](https://comic-walker.com/)
 1. [BT之家](https://www.btjiaweb.com/)
 1. [MOJi辞书-日语词典](https://www.mojidict.com/)
+1. [小楠日语](https://o-oo.net.cn/)
+1. [All About Japan](https://allabout-japan.com/)
+1. [News Web Easy](https://www3.nhk.or.jp/news/easy/)
