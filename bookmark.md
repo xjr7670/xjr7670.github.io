@@ -213,7 +213,7 @@
 1. [在线 epub 阅读](https://app.flowoss.com/)
 1. [书享家](https://www.shuxiangjia.cn/)
 1. [字幕库](https://zimuku.org/)
-1. [哔嘀影视](https://www.bdys10.com/)
+1. [哔嘀影视](https://www.bdys.me/)
 1. [台风论坛](https://tycat5.top/)
 1. [翰墨观雅](http://hanmofengya.com/)
 1. [书法欣赏](https://www.yac8.com/)
