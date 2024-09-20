@@ -235,3 +235,7 @@
 1. [小楠日语](https://o-oo.net.cn/)
 1. [All About Japan](https://allabout-japan.com/)
 1. [News Web Easy](https://www3.nhk.or.jp/news/easy/)
+1. [日本语教室](https://www.tnvn.jp/)
+1. [日语电子书](https://www.aozora.gr.jp/)
+1. [在线练口语 speechling](https://speechling.com/)
+1. [外语学习社区](https://www.jcinfo.net/)
