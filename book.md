@@ -284,3 +284,4 @@
 1. 《萤窗异草》—— 长白浩歌子 2024 年 08 月 13 日
 1. Genki - An integrated course in elementary Japanese I [日]坂野永理、池田庸子、大野裕、品川恭子、渡嘉敷恭子 2024 年 8 月 20 日
 1. A Guide to Japanese grammar -- Tae Kim 2024 年 9 月 22 日
+1. 《遥远的救世主》 —— 豆豆 2024 年 9 月 26 日
