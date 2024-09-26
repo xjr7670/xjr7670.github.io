@@ -239,3 +239,5 @@
 1. [日语电子书](https://www.aozora.gr.jp/)
 1. [在线练口语 speechling](https://speechling.com/)
 1. [外语学习社区](https://www.jcinfo.net/)
+1. [汉斯-开源期刊学术交流平台](https://www.hanspub.org/)
+1. [中文马克思主义文库](https://www.marxists.org/chinese/index.html)
