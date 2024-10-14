@@ -241,3 +241,4 @@
 1. [外语学习社区](https://www.jcinfo.net/)
 1. [汉斯-开源期刊学术交流平台](https://www.hanspub.org/)
 1. [中文马克思主义文库](https://www.marxists.org/chinese/index.html)
+1. [Core6000 日语核心词及语法归类](https://core6000.neocities.org/)
