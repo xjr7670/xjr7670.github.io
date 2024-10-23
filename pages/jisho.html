@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JiSho</title>
+    <script src="../js/vue.js"></script>
+    <script src="../js/jisho.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <input type="text" name="word">
+        <input type="button" name="query" value="Query">
+    </div>
+    <div id="result"></div>
+    <script type="text/javascript">
+        var result = document.getElementById('result')
+        result.innerText = jisho["あ"][0]["ja"]
+    </script>
+</body>
+</html>
