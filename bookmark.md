@@ -244,3 +244,5 @@
 1. [Core6000 日语核心词及语法归类](https://core6000.neocities.org/)
 1. [OJAD 日语教材标准发音](https://www.gavo.t.u-tokyo.ac.jp/)
 1. [生活的日本语教材](https://www2.jpfbj.cn/irodori/)
+1. [福娘童话集](http://hukumusume.com/douwa/index.html)
+1. [Japanese Culture](https://jpnculture.net/)
