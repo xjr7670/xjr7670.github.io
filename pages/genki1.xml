@@ -1,9 +1,9 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
 <channel>
-<title>Genki3rd-Audio</title>
+<title>Genki I-3rd-Audio</title>
 <link>https://www.xjr7670.com/pages/genki.rss</link>
 <description>
-<![CDATA[ Genki - An integrated course for elementary Japanese 3rd edition audio. Include volumn 1 and volumn 2 ]]>
+<![CDATA[ Genki - An integrated course for elementary Japanese 3rd edition audio. Include volumn 1 ]]>
 </description>
 <itunes:author>Kevin Xian</itunes:author>
 <itunes:block>no</itunes:block>
@@ -21,7 +21,7 @@
 <language>en-us</language>
 <image>
     <url>https://www.helloimg.com/i/2024/10/13/670bd92d72f4f.png?s=1400&amp;c=66&amp;f=png</url>
-    <title>Genki3rd-Audio</title>
+    <title>Genki I-3rd-Audio</title>
 </image>
 <lastBuildDate>Thu. 29 Oct 2024 11:29:54 +0000</lastBuildDate>
 <media:restriction type="country" relationship="allow">es fi fr gb nl no se us dk at ch be au nz ca de it ie lu li ad mc pl pt is mx ee lv lt my gr ar hu cz mt bg sk cy br cl co uy sv py hn pa ni pe ec do gt cr bo id jp th ro il za</media:restriction>
@@ -1914,7 +1914,7 @@
     <itunes:duration>195</itunes:duration>
     <enclosure length="3269990" type="audio/mpeg" url="https://d1ah00zr2sucky.cloudfront.net/GenkiAudioFiles/JapaneseGenki3rdEdExerciseFiles_audios/Genki3rdEdAudio_Y12.mp3"/>
     </item>
-    
+
 
     <item>
     <title>WY-1</title>
