@@ -290,3 +290,4 @@
 1. First Japanese Reader —— Nihongo Kyouiku 2024 年 10 月 27 日
 1. 《华为数据之道》 —— 华为公司数据管理部 2024 年 11 月 2 日
 1. 《筚路维艰》 —— 萧冬连 2024 年 11 月 9 日
+1. The Fisherman and his Soul -- Oscar Wilde 2024 年 11 月 16 日
