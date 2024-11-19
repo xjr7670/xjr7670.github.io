@@ -242,7 +242,7 @@
 1. [汉斯-开源期刊学术交流平台](https://www.hanspub.org/)
 1. [中文马克思主义文库](https://www.marxists.org/chinese/index.html)
 1. [Core6000 日语核心词及语法归类](https://core6000.neocities.org/)
-1. [OJAD 日语教材标准发音](https://www.gavo.t.u-tokyo.ac.jp/)
+1. [OJAD 日语教材标准发音](https://www.gavo.t.u-tokyo.ac.jp/ojad/)
 1. [生活的日本语教材](https://www2.jpfbj.cn/irodori/)
 1. [福娘童话集](http://hukumusume.com/douwa/index.html)
 1. [Japanese Culture](https://jpnculture.net/)
