@@ -246,3 +246,4 @@
 1. [生活的日本语教材](https://www2.jpfbj.cn/irodori/)
 1. [福娘童话集](http://hukumusume.com/douwa/index.html)
 1. [Japanese Culture](https://jpnculture.net/)
+1. [Plain proxies](https://plainproxies.com/resources/free-web-proxy)
