@@ -292,3 +292,4 @@
 1. 《筚路维艰》 —— 萧冬连 2024 年 11 月 9 日
 1. The Fisherman and his Soul -- Oscar Wilde 2024 年 11 月 16 日
 1. 《少年H》—— [日]妹尾河童 2024 年 11 月 23 日
+1. Genki - An integrated course in elementary Japanese II [日]坂野永理、池田庸子、大野裕、品川恭子、渡嘉敷恭子 2024 年 11 月 27 日
