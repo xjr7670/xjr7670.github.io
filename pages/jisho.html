@@ -6,16 +6,24 @@
     <title>JiSho</title>
     <script src="../js/vue.js"></script>
     <script src="../js/jisho.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/myJisho.css">
 </head>
 <body>
     <div id="container">
-        <input type="text" name="word">
-        <input type="button" name="query" value="Query">
+        <div id="queryForm">
+            <input type="text" v-model="word" name="word">
+            <input type="button" name="query" value="Query">
+            <hr>
+        </div>
+        <div id="result">
+            
+            <ul>
+                <li v-for="phrase in phrases">
+                    {{ phrase.ja }} - {{ phrase.en }} {{ phrase.l }}
+                </li>
+            </ul>
+        </div>
     </div>
-    <div id="result"></div>
-    <script type="text/javascript">
-        var result = document.getElementById('result')
-        result.innerText = jisho["あ"][0]["ja"]
-    </script>
+    <script src="../js/myJisho.js"></script>
 </body>
 </html>
