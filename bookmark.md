@@ -231,7 +231,7 @@
 1. [JIPT 资源](https://www.tanos.co.uk/)
 1. [Jisho 日英词典](https://jisho.org/)
 1. [日语漫画 comic-walker](https://comic-walker.com/)
-1. [BT之家](https://www.btjiaweb.com/)
+1. [BT之家](https://www.1lou.cc/)
 1. [MOJi辞书-日语词典](https://www.mojidict.com/)
 1. [小楠日语](https://o-oo.net.cn/)
 1. [All About Japan](https://allabout-japan.com/)
