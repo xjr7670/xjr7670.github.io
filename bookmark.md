@@ -249,3 +249,4 @@
 1. [福娘童话集](http://hukumusume.com/douwa/index.html)
 1. [Japanese Culture](https://jpnculture.net/)
 1. [Plain proxies](https://plainproxies.com/resources/free-web-proxy)
+1. [English News in Levels](https://englishnewsinlevels.com/)
