@@ -294,3 +294,4 @@
 1. 《少年H》—— [日]妹尾河童 2024 年 11 月 23 日
 1. Genki - An integrated course in elementary Japanese II [日]坂野永理、池田庸子、大野裕、品川恭子、渡嘉敷恭子 2024 年 11 月 27 日
 1. A Philosophy of Software Design -- John Outsterhout 2024 年 12 月 14 日
+1. 数据仓库生命周期工具箱 [美] Ralph Kimball 2024 年 12 月 28 日
