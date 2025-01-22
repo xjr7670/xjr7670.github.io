@@ -295,3 +295,4 @@
 1. Genki - An integrated course in elementary Japanese II [日]坂野永理、池田庸子、大野裕、品川恭子、渡嘉敷恭子 2024 年 11 月 27 日
 1. A Philosophy of Software Design -- John Outsterhout 2024 年 12 月 14 日
 1. 数据仓库生命周期工具箱 [美] Ralph Kimball 2024 年 12 月 28 日
+1. 共和国经济风云中的陈云 —— 中央文献出版社 2025 年 1 月 21 日
