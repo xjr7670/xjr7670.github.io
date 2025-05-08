@@ -251,3 +251,4 @@
 1. [Plain proxies](https://plainproxies.com/resources/free-web-proxy)
 1. [English News in Levels](https://englishnewsinlevels.com/)
 1. [Ashishb.net](https://ashishb.net/)
+1. [PublicIPTV](https://publiciptv.com)
