@@ -298,3 +298,4 @@
 1. 共和国经济风云中的陈云 —— 中央文献出版社 2025 年 1 月 21 日
 1. Genki - An integrated course in elementary Japanese II Workbook [日]坂野永理、池田庸子、大野裕、品川恭子、渡嘉敷恭子 2025 年 1 月 24 日
 1. 数据库系统概念（英文精编版•原书第7版） [美] Abraham Silberschatz/[美] Henry F. Korth/[印] S.Sudarshan 2025 年 4 月 23 日
+1. 道教十三经（上） 2025 年 5 月 10 日
