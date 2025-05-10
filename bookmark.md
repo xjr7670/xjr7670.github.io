@@ -252,3 +252,4 @@
 1. [English News in Levels](https://englishnewsinlevels.com/)
 1. [Ashishb.net](https://ashishb.net/)
 1. [PublicIPTV](https://publiciptv.com)
+1. [RSSHub](https://rsshub-doc.pages.dev)
