@@ -253,3 +253,4 @@
 1. [Ashishb.net](https://ashishb.net/)
 1. [PublicIPTV](https://publiciptv.com)
 1. [RSSHub](https://rsshub-doc.pages.dev)
+1. [日本語学習システム] (https://www.samidori.k.kyoto-u.ac.jp/)
