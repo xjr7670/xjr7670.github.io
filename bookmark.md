@@ -145,7 +145,7 @@
 1. [chiphell](https://www.chiphell.com/)
 1. [dataversity](https://www.dataversity.net/)
 1. [国家标准全文公开](http://openstd.samr.gov.cn/bzgk/gb/index)
-1. [音乐 download](https://www.hifini.com/)
+1. [音乐 download](https://www.hifihi.com/)
 1. [在线 DDL 转换](http://www.sqlines.com/online)
 1. [在线文件格式转换](https://convertio.co/)
 1. [LoreFree-电子书共享社区](https://ebook2.lorefree.com)
