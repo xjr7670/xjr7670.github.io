@@ -258,3 +258,4 @@
 1. [时光印记经典珍藏系列](http://d.sundx.cn/)
 1. [ELLLO](https://elllo.org/index.htm)
 1. [Essential English](https://www.essentialenglish.review/)
+1. [PixelsTech](https://www.pixelstech.net/)
