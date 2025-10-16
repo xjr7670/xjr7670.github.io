@@ -259,3 +259,4 @@
 1. [ELLLO](https://elllo.org/index.htm)
 1. [Essential English](https://www.essentialenglish.review/)
 1. [PixelsTech](https://www.pixelstech.net/)
+1. [巧手打字通](https://laidazi.com/)
