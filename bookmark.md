@@ -261,3 +261,4 @@
 1. [PixelsTech](https://www.pixelstech.net/)
 1. [巧手打字通](https://laidazi.com/)
 1. [Radio Garden](https://radio.garden)
+1. [magazinelib.com](https://magazinelib.com/)
