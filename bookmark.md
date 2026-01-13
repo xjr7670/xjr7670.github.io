@@ -263,3 +263,4 @@
 1. [Radio Garden](https://radio.garden)
 1. [magazinelib.com](https://magazinelib.com/)
 1. [PDF在线共享](https://dl.icdst.org)
+1. [Chrome浏览器插件开发](https://18055975947.github.io/extension/basic/)
