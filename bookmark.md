@@ -267,3 +267,4 @@
 1. [在线听音乐](https://music.lzmhhh.com/)
 1. [SoBooks](https://sobooks.cc/)
 1. [Hotbox](https://www.hotbox.fun/)
+1. [艾妃医生](https://isurethis.com/)
