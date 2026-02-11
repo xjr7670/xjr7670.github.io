@@ -266,3 +266,4 @@
 1. [Chrome浏览器插件开发](https://18055975947.github.io/extension/basic/)
 1. [在线听音乐](https://music.lzmhhh.com/)
 1. [SoBooks](https://sobooks.cc/)
+1. [Hotbox](https://www.hotbox.fun/)
