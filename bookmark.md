@@ -268,3 +268,4 @@
 1. [SoBooks](https://sobooks.cc/)
 1. [Hotbox](https://www.hotbox.fun/)
 1. [艾妃医生](https://isurethis.com/)
+1. [Nihongo](https://yarn.gonomad.cn/assets/word.html)
