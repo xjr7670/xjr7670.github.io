@@ -270,3 +270,6 @@
 1. [艾妃医生](https://isurethis.com/)
 1. [Nihongo](https://yarn.gonomad.cn/assets/word.html)
 1. [在线转epub](https://genebook.de/en/converter/web-to-ebook/)
+1. [牛津英语学习资源](https://elt.oup.com/learning_resources/?cc=cn&selLanguage=zh)
+1. [English Grammar Cafe](https://englishgrammar.cafe/)
+1. [LetMeEnglish](https://letmeenglish.com/)
