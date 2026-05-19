@@ -277,3 +277,4 @@
 1. [OI-wiki](https://oi-wiki.org)
 2. [电影人生](https://dyrs.net/)
 1. [在线之家-电影](https://www.zxzjhd.com/)
+1. [Paul Nation 语言学习专家的页面](https://www.wgtn.ac.nz/lals/resources/paul-nations-resources)
