@@ -325,3 +325,4 @@
 1. 《中国国家治理的制度逻辑》 —— 周雪光 2026 年 6 月有 22 日
 1. 《激荡三十年》 —— 吴晓波 2026 年 7 月 14 日
 1. 《恋情的终结》 —— 格雷厄姆•格林 2026 年 7 月 17 日
+1. Readings in Database Systems -- Peter Bailis/Joseph M.Hellerstein/Michael Stonebraker 2026 年 7 月 24 日
