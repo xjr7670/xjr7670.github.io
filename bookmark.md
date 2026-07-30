@@ -279,3 +279,4 @@
 1. [在线之家-电影](https://www.zxzjhd.com/)
 1. [Paul Nation 语言学习专家的页面](https://www.wgtn.ac.nz/lals/resources/paul-nations-resources)
 1. [电影港](https://www.dygangs.me)
+1. [科学仿真](https://phet.colorado.edu/zh_CN/)
