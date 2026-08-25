@@ -281,3 +281,5 @@
 1. [电影港](https://www.dygangs.me)
 1. [科学仿真](https://phet.colorado.edu/zh_CN/)
 1. [美国1888网 在线电视直播](https://yibababa.com/)
+1. [爱磁力](https://aibtt.xyz)
+1. [磁力海](https://sunhua.vip)
