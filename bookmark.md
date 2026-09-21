@@ -284,3 +284,4 @@
 1. [爱磁力](https://aibtt.xyz)
 1. [磁力海](https://sunhua.vip)
 1. [英语词源查询与词根词缀学习](https://openetymology.com/)
+1. [磁力熊](https://www.cilixiong.org/)
