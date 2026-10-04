@@ -327,3 +327,5 @@
 1. 《恋情的终结》 —— 格雷厄姆•格林 2026 年 7 月 17 日
 1. Readings in Database Systems -- Peter Bailis/Joseph M.Hellerstein/Michael Stonebraker 2026 年 7 月 24 日
 1. 《第一行代码 Android》 —— 郭霖 2026 年 8 月 4 日
+1. 《中国科幻基石丛书·三体（全三册）》 —— 刘慈欣 2026 年 9 月 18 日
+2. 《骗经》 —— 张应俞 2026 年 10 月 2 日
