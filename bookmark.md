@@ -288,3 +288,4 @@
 1. [美剧之家](https://mjltd.cc/)
 1. [ptt01线上看](https://ptt01.ws/)
 1. [韩剧网](https://9hanju.com)
+1. [123TV](https://a123tv.com/)
