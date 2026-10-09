@@ -285,3 +285,6 @@
 1. [磁力海](https://sunhua.vip)
 1. [英语词源查询与词根词缀学习](https://openetymology.com/)
 1. [磁力熊](https://www.cilixiong.org/)
+1. [美剧之家](https://mjltd.cc/)
+1. [ptt01线上看](https://ptt01.ws/)
+1. [韩剧网](https://9hanju.com)
