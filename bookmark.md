@@ -289,3 +289,4 @@
 1. [ptt01线上看](https://ptt01.ws/)
 1. [韩剧网](https://9hanju.com)
 1. [123TV](https://a123tv.com/)
+1. [Parroto 口语r搭档](https://parroto.app/)
