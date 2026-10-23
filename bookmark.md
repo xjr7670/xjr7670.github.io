@@ -290,3 +290,4 @@
 1. [韩剧网](https://9hanju.com)
 1. [123TV](https://a123tv.com/)
 1. [Parroto 口语r搭档](https://parroto.app/)
+1. [剧迷TV](https://gimyai.tw/)
