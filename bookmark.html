@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookmarks</title>
+<style>
+  :root{
+    --bg:#f5f6f8;
+    --card:#ffffff;
+    --text:#1f2328;
+    --muted:#656d76;
+    --border:#d0d7de;
+    --accent:#0969da;
+    --red:#cf222e;
+    --amber:#9a6700;
+    --shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+  header{
+    background:linear-gradient(135deg,#1f2937,#374151);
+    color:#fff;
+    padding:36px 24px 30px;
+    text-align:center;
+  }
+  header h1{margin:0 0 8px;font-size:26px;font-weight:650;letter-spacing:.5px}
+  header p{margin:0;font-size:14px;color:#cbd5e1}
+  .legend{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:14px;
+    font-size:13px;
+  }
+  .legend span{display:inline-flex;align-items:center;gap:6px;color:#e5e7eb}
+  .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+  .dot.red{background:#f87171}
+  .dot.amber{background:#fbbf24}
+  .dot.green{background:#34d399}
+  main{max-width:1180px;margin:0 auto;padding:28px 20px 60px}
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+    gap:18px;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:12px;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  }
+  .card-head{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 16px;
+    border-bottom:1px solid var(--border);
+    background:#fafbfc;
+  }
+  .num{
+    flex:0 0 auto;
+    width:26px;height:26px;
+    border-radius:8px;
+    background:var(--accent);
+    color:#fff;
+    font-size:13px;
+    font-weight:600;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .card-head h2{
+    margin:0;
+    font-size:15px;
+    font-weight:650;
+  }
+  .count{
+    margin-left:auto;
+    font-size:12px;
+    color:var(--muted);
+    background:#eef1f4;
+    border-radius:20px;
+    padding:1px 9px;
+    white-space:nowrap;
+  }
+  ul{
+    list-style:none;
+    margin:0;
+    padding:8px 0;
+    /*max-height:420px;*/
+    /*overflow-y:auto;*/
+  }
+  li{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    padding:5px 16px;
+    font-size:13.5px;
+    border-left:3px solid transparent;
+  }
+  li:hover{background:#f6f8fa}
+  li a{
+    color:var(--text);
+    text-decoration:none;
+    word-break:break-all;
+  }
+  li a:hover{color:var(--accent);text-decoration:underline}
+  .url{color:var(--muted);font-size:11.5px;margin-left:2px;word-break:break-all}
+  .tag{
+    margin-left:auto;
+    flex:0 0 auto;
+    font-size:11.5px;
+    font-weight:600;
+    white-space:nowrap;
+    padding-left:8px;
+  }
+  .tag.red{color:var(--red)}
+  .tag.amber{color:var(--amber)}
+  .note{
+    margin-top:28px;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:16px 20px;
+    font-size:13px;
+    color:var(--muted);
+    box-shadow:var(--shadow);
+  }
+  .note strong{color:var(--text)}
+  .note ul{max-height:none;overflow:visible;padding:0;margin:8px 0 0 0;list-style:disc;padding-left:20px}
+  .note li{padding:3px 0;border:none;display:list-item;font-size:13px}
+  footer{text-align:center;font-size:12px;color:var(--muted);padding:0 20px 40px}
+  @media (max-width:480px){
+    .grid{grid-template-columns:1fr}
+    header h1{font-size:21px}
+  }
+/* 导航样式  */
+  .cat-nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px 14px;
+  margin-top:16px;
+  font-size:13.5px;
+}
+.cat-nav a{
+  color:#cbd5e1;
+  text-decoration:none;
+  padding:3px 10px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,.18);
+  transition:background .15s,color .15s,border-color .15s;
+}
+.cat-nav a:hover{
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  border-color:rgba(255,255,255,.35);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="cat-nav">
+    <a href="#cat-1">英语学习</a>
+    <a href="#cat-2">日语学习</a>
+    <a href="#cat-3">小语种</a>
+    <a href="#cat-4">编程技术</a>
+    <a href="#cat-5">公开课</a>
+    <a href="#cat-6">影视娱乐</a>
+    <a href="#cat-7">电子书</a>
+    <a href="#cat-8">设计素材</a>
+    <a href="#cat-9">数据学术</a>
+    <a href="#cat-10">办公工具</a>
+    <a href="#cat-11">生活其他</a>
+  </nav>
+</header>
+
+<main>
+<div class="grid">
+
+  <!-- 1 英语学习与阅读 -->
+  <section class="card" id="cat-1">
+    <div class="card-head"><span class="num">1</span><h2>英语学习与阅读</h2><span class="count">38</span></div>
+    <ul>
+      <li><a href="http://learningenglish.voanews.com/" target="_blank" rel="noopener">Voice of America</a><span class="url">voanews.com</span></li>
+      <li><a href="http://www.bbc.com/" target="_blank" rel="noopener">BBC</a><span class="url">bbc.com</span></li>
+      <li><a href="http://www.npr.org/" target="_blank" rel="noopener">全国公共广播电台</a><span class="url">npr.org</span></li>
+      <li><a href="http://edition.cnn.com/" target="_blank" rel="noopener">CNN</a><span class="url">edition.cnn.com</span></li>
+      <li><a href="http://www.yywz123.com/" target="_blank" rel="noopener">英语学习网站大全</a><span class="url">yywz123.com</span></li>
+      <li><a href="http://www.qcenglish.com/" target="_blank" rel="noopener">七彩英语</a><span class="url">qcenglish.com</span></li>
+      <li><a href="http://www.gutenberg.org/" target="_blank" rel="noopener">免费英文电子书</a><span class="url">gutenberg.org</span></li>
+      <li><a href="https://voicetube.com/" target="_blank" rel="noopener">VoiceTube</a><span class="url">voicetube.com</span></li>
+      <li><a href="https://www.wordreference.com/" target="_blank" rel="noopener">Wordreference</a><span class="url">wordreference.com</span></li>
+      <li><a href="https://learnenglish.britishcouncil.org/" target="_blank" rel="noopener">British Council Learn English</a><span class="url">learnenglish.britishcouncil.org</span></li>
+      <li><a href="https://americanenglish.state.gov/" target="_blank" rel="noopener">American English</a><span class="url">americanenglish.state.gov</span></li>
+      <li><a href="https://www.usalearns.org/" target="_blank" rel="noopener">usa learns</a><span class="url">usalearns.org</span></li>
+      <li><a href="https://breakingnewsenglish.com/" target="_blank" rel="noopener">英语新闻分级阅读</a><span class="url">breakingnewsenglish.com</span></li>
+      <li><a href="https://elllo.org/index.htm" target="_blank" rel="noopener">ELLLO</a><span class="url">elllo.org</span></li>
+      <li><a href="https://englishnewsinlevels.com/" target="_blank" rel="noopener">English News in Levels</a><span class="url">englishnewsinlevels.com</span></li>
+      <li><a href="https://letmeenglish.com/" target="_blank" rel="noopener">LetMeEnglish</a><span class="url">letmeenglish.com</span></li>
+      <li><a href="https://www.k5learning.com/" target="_blank" rel="noopener">K5Learning</a><span class="url">k5learning.com</span></li>
+      <li><a href="https://english-e-reader.net/" target="_blank" rel="noopener">English-e-Reader</a><span class="url">english-e-reader.net</span></li>
+      <li><a href="https://freegradedreaders.com/" target="_blank" rel="noopener">free Graded Readers</a><span class="url">freegradedreaders.com</span></li>
+      <li><a href="https://or4f.org/" target="_blank" rel="noopener">Online Reading for Fluency</a><span class="url">or4f.org</span></li>
+      <li><a href="https://www.essentialenglish.review/" target="_blank" rel="noopener">Essential English</a><span class="url">essentialenglish.review</span></li>
+      <li><a href="https://englishgrammar.cafe/" target="_blank" rel="noopener">English Grammar Cafe</a><span class="url">englishgrammar.cafe</span></li>
+      <li><a href="https://www.polyglot101.com/" target="_blank" rel="noopener">Polyglot101</a><span class="url">polyglot101.com</span></li>
+      <li><a href="https://elt.oup.com/learning_resources/?cc=cn&selLanguage=zh" target="_blank" rel="noopener">牛津英语学习资源</a><span class="url">elt.oup.com</span></li>
+      <li><a href="https://learningenglishwithoxford.com/" target="_blank" rel="noopener">learningenglishwithoxford.com</a><span class="url">learningenglishwithoxford.com</span></li>
+      <li><a href="https://writeandimprove.com/" target="_blank" rel="noopener">剑桥写作与提高</a><span class="url">writeandimprove.com</span></li>
+      <li><a href="https://speechling.com/" target="_blank" rel="noopener">在线练口语 speechling</a><span class="url">speechling.com</span></li>
+      <li><a href="https://parroto.app/" target="_blank" rel="noopener">Parroto 口语搭档</a><span class="url">parroto.app</span></li>
+      <li><a href="https://www.babelabc.cn/" target="_blank" rel="noopener">巴别英语</a><span class="url">babelabc.cn</span></li>
+      <li><a href="https://www.busuu.com/" target="_blank" rel="noopener">Busuu外语学习平台</a><span class="url">busuu.com</span></li>
+      <li><a href="https://learnenglish-new.com/" target="_blank" rel="noopener">learnenglish-new</a><span class="url">learnenglish-new.com</span></li>
+      <li><a href="https://www.openenglishprograms.org/" target="_blank" rel="noopener">Open English Programs</a><span class="url">openenglishprograms.org</span></li>
+      <li><a href="https://americanliterature.com/" target="_blank" rel="noopener">American Literature</a><span class="url">americanliterature.com</span></li>
+      <li><a href="https://fcit.usf.edu" target="_blank" rel="noopener">Florida Center for Instructional Technology</a><span class="url">fcit.usf.edu</span></li>
+      <li><a href="https://en.islcollective.com/" target="_blank" rel="noopener">islcollective</a><span class="url">en.islcollective.com</span></li>
+      <li><a href="https://fiveminuteswithdad.com/" target="_blank" rel="noopener">five-minutes-with-dad</a><span class="url">fiveminuteswithdad.com</span></li>
+      <li><a href="https://monkeytype.com/" target="_blank" rel="noopener">Monkeytype-打字速度测试</a><span class="url">monkeytype.com</span></li>
+      <li><a href="https://qwerty.kaiyi.cool/" target="_blank" rel="noopener">qwerty-learn-边背单词边练打字</a><span class="url">qwerty.kaiyi.cool</span></li>
+    </ul>
+  </section>
+
+  <!-- 2 日语学习 -->
+  <section class="card" id="cat-2">
+    <div class="card-head"><span class="num">2</span><h2>日语学习</h2><span class="count">30</span></div>
+    <ul>
+      <li><a href="https://jisho.org/" target="_blank" rel="noopener">Jisho 日英词典</a><span class="url">jisho.org</span></li>
+      <li><a href="https://www.mojidict.com/" target="_blank" rel="noopener">MOJi辞书-日语词典</a><span class="url">mojidict.com</span></li>
+      <li><a href="https://www.gavo.t.u-tokyo.ac.jp/ojad/" target="_blank" rel="noopener">OJAD 日语教材标准发音</a><span class="url">gavo.t.u-tokyo.ac.jp/ojad</span></li>
+      <li><a href="https://sethclydesdale.github.io/genki-study-resources/lessons-3rd/" target="_blank" rel="noopener">GenkiStudyResource 元气日语学习资源</a><span class="url">sethclydesdale.github.io</span></li>
+      <li><a href="https://t-nagano.com/projects/JapaneseGenki3rdEdAudio/" target="_blank" rel="noopener">Genki 3rd edition Audio 元气日语在线音频</a><span class="url">t-nagano.com</span></li>
+      <li><a href="https://www.tanos.co.uk/" target="_blank" rel="noopener">JIPT 资源</a><span class="url">tanos.co.uk</span></li>
+      <li><a href="https://comic-walker.com/" target="_blank" rel="noopener">日语漫画 comic-walker</a><span class="url">comic-walker.com</span></li>
+      <li><a href="https://www3.nhk.or.jp/news/easy/" target="_blank" rel="noopener">News Web Easy</a><span class="url">www3.nhk.or.jp/news/easy</span></li>
+      <li><a href="https://www.tnvn.jp/" target="_blank" rel="noopener">日本语教室</a><span class="url">tnvn.jp</span></li>
+      <li><a href="https://www.aozora.gr.jp/" target="_blank" rel="noopener">日语电子书（青空文库）</a><span class="url">aozora.gr.jp</span></li>
+      <li><a href="https://www.samidori.k.kyoto-u.ac.jp/" target="_blank" rel="noopener">日本語学習システム</a><span class="url">samidori.k.kyoto-u.ac.jp</span></li>
+      <li><a href="https://core6000.neocities.org/" target="_blank" rel="noopener">Core6000 日语核心词及语法归类</a><span class="url">core6000.neocities.org</span></li>
+      <li><a href="http://hukumusume.com/douwa/index.html" target="_blank" rel="noopener">福娘童话集</a><span class="url">hukumusume.com</span></li>
+      <li><a href="https://o-oo.net.cn/" target="_blank" rel="noopener">小楠日语</a><span class="url">o-oo.net.cn</span></li>
+      <li><a href="https://www2.jpfbj.cn/irodori/" target="_blank" rel="noopener">生活的日本语教材</a><span class="url">www2.jpfbj.cn/irodori</span></li>
+      <li><a href="https://allabout-japan.com/" target="_blank" rel="noopener">All About Japan</a><span class="url">allabout-japan.com</span></li>
+      <li><a href="https://jpnculture.net/" target="_blank" rel="noopener">Japanese Culture</a><span class="url">jpnculture.net</span></li>
+      <li><a href="https://www.jcinfo.net/" target="_blank" rel="noopener">外语学习社区</a><span class="url">jcinfo.net</span></li>
+      <li><a href="https://yarn.gonomad.cn/assets/word.html" target="_blank" rel="noopener">Nihongo</a><span class="url">yarn.gonomad.cn</span></li>
+    </ul>
+  </section>
+
+  <!-- 3 小语种学习 -->
+  <section class="card" id="cat-3">
+    <div class="card-head"><span class="num">3</span><h2>小语种</h2><span class="count">30</span></div>
+    <ul>
+      <li><a href="http://sp.tingroom.com/" target="_blank" rel="noopener">西班牙语学习网</a><span class="url">sp.tingroom.com</span></li>
+      <li><a href="http://www.52xyz.com/es/" target="_blank" rel="noopener">我爱小语种－西语网</a><span class="url">52xyz.com/es</span></li>
+      <li><a href="http://www.multi.tku.edu.tw/" target="_blank" rel="noopener">多语莫敌网络教学站</a><span class="url">multi.tku.edu.tw</span></li>
+      <li><a href="http://cvc.cervantes.es/ensenanza/mimundo/" target="_blank" rel="noopener">CVC西语学习</a><span class="url">cvc.cervantes.es</span></li>
+      <li><a href="http://www.spanishdict.com/" target="_blank" rel="noopener">西班牙语词典</a><span class="url">spanishdict.com</span></li>
+      <li><a href="http://www.aurora.patrick-nieto.fr/" target="_blank" rel="noopener">西语动画学习</a><span class="url">aurora.patrick-nieto.fr</span></li>
+      <li><a href="http://www.myspsp.com/" target="_blank" rel="noopener">西语西国</a><span class="url">myspsp.com</span></li>
+      <li><a href="http://www.bbc.co.uk/languages/spanish/" target="_blank" rel="noopener">BBC西班牙语</a><span class="url">bbc.co.uk/languages/spanish</span></li>
+      <li><a href="http://www.myeses.com/" target="_blank" rel="noopener">西班牙语西班牙</a><span class="url">myeses.com</span></li>
+      <li><a href="https://app.fluencia.com/" target="_blank" rel="noopener">西班牙语学习（Fluencia）</a><span class="url">app.fluencia.com</span></li>
+      <li><a href="https://www.wgtn.ac.nz/lals/resources/paul-nations-resources" target="_blank" rel="noopener">Paul Nation 语言学习专家的页面</a><span class="url">wgtn.ac.nz</span></li>
+    </ul>
+  </section>
+
+  <!-- 4 编程与计算机技术 -->
+  <section class="card" id="cat-4">
+    <div class="card-head"><span class="num">4</span><h2>编程与计算机技术</h2><span class="count">43</span></div>
+    <ul>
+      <li><a href="http://www.code.org/" target="_blank" rel="noopener">Code.org</a><span class="url">code.org</span></li>
+      <li><a href="http://www.crunchzilla.com/code-monster" target="_blank" rel="noopener">Code Monster from Crunchzilla</a><span class="url">crunchzilla.com</span></li>
+      <li><a href="http://www.codecademy.com/" target="_blank" rel="noopener">Codecademy编程学院</a><span class="url">codecademy.com</span></li>
+      <li><a href="http://www.w3cschool.cc/" target="_blank" rel="noopener">W3cschool菜鸟教程</a><span class="url">w3cschool.cc</span></li>
+      <li><a href="http://www.w3school.com.cn/" target="_blank" rel="noopener">W3Cschool在线教程</a><span class="url">w3school.com.cn</span></li>
+      <li><a href="https://leetcode.com" target="_blank" rel="noopener">在线编程挑战</a><span class="url">leetcode.com</span></li>
+      <li><a href="https://www.shiyanlou.com/" target="_blank" rel="noopener">实验楼－IT教学</a><span class="url">shiyanlou.com</span></li>
+      <li><a href="http://www.kaikeba.com/" target="_blank" rel="noopener">开课吧</a><span class="url">kaikeba.com</span></li>
+      <li><a href="http://edu.csdn.net/" target="_blank" rel="noopener">黑马程序员官网</a><span class="url">edu.csdn.net</span></li>
+      <li><a href="https://csdiy.wiki" target="_blank" rel="noopener">CS自学指南</a><span class="url">csdiy.wiki</span></li>
+      <li><a href="https://oi-wiki.org" target="_blank" rel="noopener">OI-wiki</a><span class="url">oi-wiki.org</span></li>
+      <li><a href="https://devdocs.io" target="_blank" rel="noopener">Devdocs各种语言的开发文档</a><span class="url">devdocs.io</span></li>
+      <li><a href="https://github.com/justjavac/free-programming-books-zh_CN" target="_blank" rel="noopener">免费编程书－中文版</a><span class="url">github.com/justjavac</span></li>
+      <li><a href="https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md" target="_blank" rel="noopener">免费编程书－英文版</a><span class="url">github.com/vhf</span></li>
+      <li><a href="http://www.oreilly.com/programming/free/" target="_blank" rel="noopener">Oreilly的免费编程书</a><span class="url">oreilly.com</span></li>
+      <li><a href="https://pymotw.com/3/index.html" target="_blank" rel="noopener">Python 3 Module of the Week</a><span class="url">pymotw.com</span></li>
+      <li><a href="http://pythonbooks.revolunet.com/" target="_blank" rel="noopener">PythonBooks</a><span class="url">pythonbooks.revolunet.com</span></li>
+      <li><a href="http://www.fullstackpython.com/" target="_blank" rel="noopener">fullstackpython</a><span class="url">fullstackpython.com</span></li>
+      <li><a href="http://djangobook.py3k.cn/2.0/" target="_blank" rel="noopener">Django book 2.0 的中文翻译</a><span class="url">djangobook.py3k.cn</span></li>
+      <li><a href="http://docs.python-guide.org/en/latest/" target="_blank" rel="noopener">The Hitchhiker’s Guide to Python!</a><span class="url">docs.python-guide.org</span></li>
+      <li><a href="https://interactivepython.org/" target="_blank" rel="noopener">interactivepython</a><span class="url">interactivepython.org</span></li>
+      <li><a href="https://realpython.com/" target="_blank" rel="noopener">realpython</a><span class="url">realpython.com</span></li>
+      <li><a href="https://www.python-course.eu/" target="_blank" rel="noopener">python-course</a><span class="url">python-course.eu</span></li>
+      <li><a href="http://pybrain.org/" target="_blank" rel="noopener">PyBrain 一个简单易用的Python神经网络库</a><span class="url">pybrain.org</span></li>
+      <li><a href="https://www.datacamp.com" target="_blank" rel="noopener">DataCamp</a><span class="url">datacamp.com</span></li>
+      <li><a href="https://sqliteonline.com/" target="_blank" rel="noopener">SQL Online IDE</a><span class="url">sqliteonline.com</span></li>
+      <li><a href="https://codepen.io/" target="_blank" rel="noopener">Code Pen</a><span class="url">codepen.io</span></li>
+      <li><a href="https://www.fronteditor.dev/" target="_blank" rel="noopener">Front-end Editor</a><span class="url">fronteditor.dev</span></li>
+      <li><a href="https://18055975947.github.io/extension/basic/" target="_blank" rel="noopener">Chrome浏览器插件开发</a><span class="url">github.io/extension</span></li>
+      <li><a href="http://www.jb51.net/" target="_blank" rel="noopener">脚本之家</a><span class="url">jb51.net</span></li>
+      <li><a href="http://www.pudn.com/" target="_blank" rel="noopener">联合开发网</a><span class="url">pudn.com</span></li>
+      <li><a href="http://coolaf.com/" target="_blank" rel="noopener">在线web调试工具</a><span class="url">coolaf.com</span></li>
+      <li><a href="https://tool.lu" target="_blank" rel="noopener">在线工具集</a><span class="url">tool.lu</span></li>
+      <li><a href="http://www.tutorialspoint.com/" target="_blank" rel="noopener">在线IDE</a><span class="url">tutorialspoint.com</span></li>
+      <li><a href="http://www.sqlines.com/online" target="_blank" rel="noopener">在线 DDL 转换</a><span class="url">sqlines.com/online</span></li>
+      <li><a href="https://convertio.co/" target="_blank" rel="noopener">在线文件格式转换</a><span class="url">convertio.co</span></li>
+      <li><a href="https://akaedu.github.io/book/index.html" target="_blank" rel="noopener">Linux C 编程一站式学习</a><span class="url">akaedu.github.io</span></li>
+      <li><a href="https://aosabook.org/en/" target="_blank" rel="noopener">500 Lines or Less</a><span class="url">aosabook.org</span></li>
+      <li><a href="https://hackway.org/" target="_blank" rel="noopener">计算机专业学习路线</a><span class="url">hackway.org</span></li>
+      <li><a href="https://demo.gethue.com/hue/" target="_blank" rel="noopener">hive online env</a><span class="url">demo.gethue.com</span></li>
+      <li><a href="https://visualgo.net/" target="_blank" rel="noopener">数据结构和算法可视化</a><span class="url">visualgo.net</span></li>
+      <li><a href="http://netsmell.com/post/pathfinding.html" target="_blank" rel="noopener">动画展示各种路径搜索算法</a><span class="url">netsmell.com</span></li>
+      <li><a href="https://www.discoversdk.com/" target="_blank" rel="noopener">DiscoverSDK-Tool for Developers</a><span class="url">discoversdk.com</span></li>
+    </ul>
+  </section>
+
+  <!-- 5 公开课与综合教育 -->
+  <section class="card" id="cat-5">
+    <div class="card-head"><span class="num">5</span><h2>公开课与综合教育</h2><span class="count">15</span></div>
+    <ul>
+      <li><a href="https://www.coursera.org/" target="_blank" rel="noopener">Coursera</a><span class="url">coursera.org</span></li>
+      <li><a href="https://www.cmooc.com/" target="_blank" rel="noopener">MOOC公开课</a><span class="url">cmooc.com</span></li>
+      <li><a href="https://www.class-central.com/" target="_blank" rel="noopener">CLASS CENTRAL</a><span class="url">class-central.com</span></li>
+      <li><a href="http://www.icourses.cn/" target="_blank" rel="noopener">爱课程</a><span class="url">icourses.cn</span></li>
+      <li><a href="http://www.1ketang.com/" target="_blank" rel="noopener">壹课堂</a><span class="url">1ketang.com</span></li>
+      <li><a href="https://moocs.unipus.cn" target="_blank" rel="noopener">中国高校外语慕课平台</a><span class="url">moocs.unipus.cn</span></li>
+      <li><a href="http://www.dxzy163.com" target="_blank" rel="noopener">大学资源网</a><span class="url">dxzy163.com</span></li>
+      <li><a href="https://eduyun.cn/" target="_blank" rel="noopener">国家教育资源公共服务平台</a><span class="url">eduyun.cn</span></li>
+      <li><a href="https://www.ck12.org" target="_blank" rel="noopener">ck12</a><span class="url">ck12.org</span></li>
+      <li><a href="https://www.examcoo.com" target="_blank" rel="noopener">考试酷－电子作业与在线考试系统</a><span class="url">examcoo.com</span></li>
+      <li><a href="http://www.duia.com" target="_blank" rel="noopener">对吖视频直播学习</a><span class="url">duia.com</span></li>
+      <li><a href="http://www.mathpages.com/" target="_blank" rel="noopener">MathPage</a><span class="url">mathpages.com</span></li>
+      <li><a href="https://www.mathsisfun.com/" target="_blank" rel="noopener">Math is fun</a><span class="url">mathsisfun.com</span></li>
+      <li><a href="https://shuxuele.com" target="_blank" rel="noopener">数学乐</a><span class="url">shuxuele.com</span></li>
+      <li><a href="https://www.51zxw.net/" target="_blank" rel="noopener">我要自学网</a><span class="url">51zxw.net/</span></li>
+      <li><a href="https://phet.colorado.edu/zh_CN/" target="_blank" rel="noopener">科学仿真</a><span class="url">phet.colorado.edu</span></li>
+    </ul>
+  </section>
+
+  <!-- 6 影视与视频娱乐 -->
+  <section class="card" id="cat-6">
+    <div class="card-head"><span class="num">6</span><h2>影视与视频娱乐</h2><span class="count">36</span></div>
+    <ul>
+      <li><a href="http://www.6vdy.com/" target="_blank" rel="noopener">6V电影网</a><span class="url">6vdy.com</span></li>
+      <li><a href="http://www.dy2018.com/" target="_blank" rel="noopener">电影天堂</a><span class="url">dy2018.com</span></li>
+      <li><a href="http://www.loldytt.com/" target="_blank" rel="noopener">电影天堂</a><span class="url">loldytt.com</span></li>
+      <li><a href="https://www.bdys.me/" target="_blank" rel="noopener">哔嘀影视</a><span class="url">bdys.me</span></li>
+      <li><a href="https://www.fuddj.com/" target="_blank" rel="noopener">哔嘀影视</a><span class="url">fuddj.com</span></li>
+      <li><a href="https://www.zxzjhd.com/" target="_blank" rel="noopener">在线之家-电影</a><span class="url">zxzjhd.com</span></li>
+      <li><a href="https://gimyai.tw/" target="_blank" rel="noopener">剧迷TV</a><span class="url">gimyai.tw</span></li>
+      <li><a href="https://mjltd.cc/" target="_blank" rel="noopener">美剧之家</a><span class="url">mjltd.cc</span>
+      <li><a href="https://9hanju.com" target="_blank" rel="noopener">韩剧网</a><span class="url">9hanju.com</span></li>
+      <li><a href="https://ptt01.ws/" target="_blank" rel="noopener">ptt01线上看</a><span class="url">ptt01.ws</span></li>
+      <li><a href="https://a123tv.com/" target="_blank" rel="noopener">123TV</a><span class="url">a123tv.com</span></li>
+      <li><a href="https://tubitv.com" target="_blank" rel="noopener">tubitv.com</a><span class="url">tubitv.com</span></li>
+      <li><a href="https://yesmovies.id" target="_blank" rel="noopener">yesmovies.id</a><span class="url">yesmovies.id</span></li>
+      <li><a href="https://rarbg.to/torrents.php" target="_blank" rel="noopener">最新电影Torrents下载</a><span class="url">rarbg.to</span></li>
+      <li><a href="https://rarbg.is/" target="_blank" rel="noopener">rarbg.is/资源分享</a><span class="url">rarbg.is</span></li>
+      <li><a href="https://yts.lt/" target="_blank" rel="noopener">movie download2</a><span class="url">yts.lt</span></li>
+      <li><a href="https://btbtt16.com/" target="_blank" rel="noopener">BT之家</a><span class="url">btbtt16.com</span></li>
+      <li><a href="https://www.1lou.cc/" target="_blank" rel="noopener">BT之家</a><span class="url">1lou.cc</span></li>
+      <li><a href="https://www.ddmp4.cc/" target="_blank" rel="noopener">MP4电影</a><span class="url">ddmp4.cc</span></li>
+      <li><a href="https://dyrs.net/" target="_blank" rel="noopener">电影人生</a><span class="url">dyrs.net</span></li>
+      <li><a href="https://www.dygangs.me" target="_blank" rel="noopener">电影港</a><span class="url">dygangs.me</span></li>
+      <li><a href="https://aibtt.xyz" target="_blank" rel="noopener">爱磁力</a><span class="url">aibtt.xyz</span></li>
+      <li><a href="https://sunhua.vip" target="_blank" rel="noopener">磁力海</a><span class="url">sunhua.vip</span></li>
+      <li><a href="https://www.cilixiong.org/" target="_blank" rel="noopener">磁力熊</a><span class="url">cilixiong.org</span></li>
+      <li><a href="https://zimuku.org/" target="_blank" rel="noopener">字幕库</a><span class="url">zimuku.org</span></li>
+      <li><a href="http://www.imdb.com/" target="_blank" rel="noopener">IMDb</a><span class="url">imdb.com</span></li>
+      <li><a href="https://www.yikm.net/" target="_blank" rel="noopener">红白机游戏</a><span class="url">yikm.net</span></li>
+      <li><a href="https://publiciptv.com" target="_blank" rel="noopener">PublicIPTV</a><span class="url">publiciptv.com</span></li>
+      <li><a href="https://radio.garden" target="_blank" rel="noopener">Radio Garden</a><span class="url">radio.garden</span></li>
+      <li><a href="https://yibababa.com/" target="_blank" rel="noopener">美国1888网 在线电视直播</a><span class="url">yibababa.com</span></li>
+      <li><a href="https://www.hotbox.fun/" target="_blank" rel="noopener">Hotbox</a><span class="url">hotbox.fun</span></li>
+      <li><a href="http://live.ipanda.com/" target="_blank" rel="noopener">熊猫直播</a><span class="url">live.ipanda.com</span></li>
+      <li><a href="http://www.ittf.com/" target="_blank" rel="noopener">国际乒乓球联合会</a><span class="url">ittf.com</span></li>
+      <li><a href="http://bestcbooks.com/" target="_blank" rel="noopener">神马电影网</a><span class="url">bestcbooks.com</span></li>
+    </ul>
+  </section>
+
+  <!-- 7 电子书与文献资源 -->
+  <section class="card" id="cat-7">
+    <div class="card-head"><span class="num">7</span><h2>电子书与文献资源</h2><span class="count">27</span></div>
+    <ul>
+      <li><a href="https://shuge.org/" target="_blank" rel="noopener">书格</a><span class="url">shuge.org</span></li>
+      <li><a href="http://www.haodoo.net/" target="_blank" rel="noopener">好讀</a><span class="url">haodoo.net</span></li>
+      <li><a href="http://open-lit.com/" target="_blank" rel="noopener">開放文學</a><span class="url">open-lit.com</span></li>
+      <li><a href="https://ctext.org/zhs" target="_blank" rel="noopener">中国哲学书电子化计划</a><span class="url">ctext.org</span></li>
+      <li><a href="https://www.jiumodiary.com/" target="_blank" rel="noopener">鸠摩搜书</a><span class="url">jiumodiary.com</span></li>
+      <li><a href="https://ebook2.lorefree.com" target="_blank" rel="noopener">LoreFree-电子书共享社区</a><span class="url">ebook2.lorefree.com</span></li>
+      <li><a href="https://annas-archive.org/" target="_blank" rel="noopener">Anna's Archive</a><span class="url">annas-archive.org</span></li>
+      <li><a href="https://www.ooopn.com/tool/zlibrary/" target="_blank" rel="noopener">z-lib镜像</a><span class="url">ooopn.com/tool/zlibrary</span></li>
+      <li><a href="https://zlib.cydiar.com/" target="_blank" rel="noopener">z-library备份</a><span class="url">zlib.cydiar.com</span></li>
+      <li><a href="https://libgen.yncjkj.com/" target="_blank" rel="noopener">libgen</a><span class="url">libgen.yncjkj.com</span></li>
+      <li><a href="https://vdoc.pub/" target="_blank" rel="noopener">vdoc.pub</a><span class="url">vdoc.pub</span></li>
+      <li><a href="https://sobooks.cc/" target="_blank" rel="noopener">SoBooks</a><span class="url">sobooks.cc</span></li>
+      <li><a href="https://www.52doc.com/" target="_blank" rel="noopener">我爱电子书</a><span class="url">52doc.com</span></li>
+      <li><a href="https://www.enjing.com/" target="_blank" rel="noopener">恩京书房</a><span class="url">enjing.com</span></li>
+      <li><a href="http://cn.epubee.com/" target="_blank" rel="noopener">在线电子书转换器</a><span class="url">cn.epubee.com</span></li>
+      <li><a href="https://app.flowoss.com/" target="_blank" rel="noopener">在线 epub 阅读</a><span class="url">app.flowoss.com</span></li>
+      <li><a href="https://nav.yibook.org/" target="_blank" rel="noopener">电子书导航</a><span class="url">nav.yibook.org</span></li>
+      <li><a href="https://www.shuxiangjia.cn/" target="_blank" rel="noopener">书享家</a><span class="url">shuxiangjia.cn</span></li>
+      <li><a href="https://filezn.com/" target="_blank" rel="noopener">FileZN</a><span class="url">filezn.com</span></li>
+      <li><a href="https://www.yunpz.net" target="_blank" rel="noopener">云铺子</a><span class="url">yunpz.net</span></li>
+      <li><a href="https://www.xiaobaipan.com/" target="_blank" rel="noopener">小白盘</a><span class="url">xiaobaipan.com</span></li>
+      <li><a href="https://dl.icdst.org" target="_blank" rel="noopener">PDF在线共享</a><span class="url">dl.icdst.org</span></li>
+      <li><a href="https://magazinelib.com/" target="_blank" rel="noopener">magazinelib.com</a><span class="url">magazinelib.com</span></li>
+      <li><a href="http://www.it-ebooks.info/" target="_blank" rel="noopener">IT eBooks</a><span class="url">it-ebooks.info</span></li>
+      <li><a href="https://genebook.de/en/converter/web-to-ebook/" target="_blank" rel="noopener">在线转epub</a><span class="url">genebook.de</span></li>
+      <li><a href="https://freekidsbooks.org/" target="_blank" rel="noopener">Free kids books</a><span class="url">freekidsbooks.org</span></li>
+    </ul>
+  </section>
+
+  <!-- 8 设计、素材与图片工具 -->
+  <section class="card" id="cat-8">
+    <div class="card-head"><span class="num">8</span><h2>设计、素材与图片工具</h2><span class="count">17</span></div>
+    <ul>
+      <li><a href="http://www.sccnn.com/" target="_blank" rel="noopener">素材中国</a><span class="url">sccnn.com</span></li>
+      <li><a href="http://90sheji.com/" target="_blank" rel="noopener">90设计</a><span class="url">90sheji.com</span></li>
+      <li><a href="http://huaban.com/" target="_blank" rel="noopener">花瓣图片</a><span class="url">huaban.com</span></li>
+      <li><a href="http://www.aigei.com" target="_blank" rel="noopener">爱给网－素材下载</a><span class="url">aigei.com</span></li>
+      <li><a href="http://www.maka.im/" target="_blank" rel="noopener">MAKA HTML5微信编辑器</a><span class="url">maka.im</span></li>
+      <li><a href="http://eqxiu.com/" target="_blank" rel="noopener">易企秀</a><span class="url">eqxiu.com</span></li>
+      <li><a href="http://weavesilk.com/" target="_blank" rel="noopener">丝画</a><span class="url">weavesilk.com</span></li>
+      <li><a href="http://www.zefrank.com/scribbler/scribblertoo/" target="_blank" rel="noopener">在线画画</a><span class="url">zefrank.com/scribbler</span></li>
+      <li><a href="http://asciiflow.com/" target="_blank" rel="noopener">ASCII 作图</a><span class="url">asciiflow.com</span></li>
+      <li><a href="https://www.yasuotu.com" target="_blank" rel="noopener">压缩图</a><span class="url">yasuotu.com</span></li>
+      <li><a href="https://www.mygraphpaper.com/" target="_blank" rel="noopener">定制表格</a><span class="url">mygraphpaper.com</span></li>
+      <li><a href="http://exif.regex.info/exif.cgi" target="_blank" rel="noopener">Image Metadata Viewer</a><span class="url">exif.regex.info</span></li>
+      <li><a href="http://nowsourcing.com/" target="_blank" rel="noopener">Infographic Design</a><span class="url">nowsourcing.com</span></li>
+      <li><a href="http://www.stanleycolors.com/" target="_blank" rel="noopener">Stanley Colors - Comics and Stuff</a><span class="url">stanleycolors.com</span></li>
+    </ul>
+  </section>
+
+  <!-- 9 数据、资讯与学术工具 -->
+  <section class="card" id="cat-9">
+    <div class="card-head"><span class="num">9</span><h2>数据、资讯与学术工具</h2><span class="count">31</span></div>
+    <ul>
+      <li><a href="http://www.ce.cn/" target="_blank" rel="noopener">中国经济网</a><span class="url">ce.cn</span></li>
+      <li><a href="http://www.cnnic.net.cn/" target="_blank" rel="noopener">中国互联网络信息中心</a><span class="url">cnnic.net.cn</span></li>
+      <li><a href="http://www.199it.com/" target="_blank" rel="noopener">中文互联网数据研究资讯中心</a><span class="url">199it.com</span></li>
+      <li><a href="http://www.icpcw.com/" target="_blank" rel="noopener">电脑报官方网站</a><span class="url">icpcw.com</span></li>
+      <li><a href="http://www.donews.com/" target="_blank" rel="noopener">Donews</a><span class="url">donews.com</span></li>
+      <li><a href="http://www.ccw.com.cn/" target="_blank" rel="noopener">计世网</a><span class="url">ccw.com.cn</span></li>
+      <li><a href="http://www.theverge.com/" target="_blank" rel="noopener">The Verge</a><span class="url">theverge.com</span></li>
+      <li><a href="https://slashdot.org/" target="_blank" rel="noopener">Slashdot</a><span class="url">slashdot.org</span></li>
+      <li><a href="https://www.cio.com/" target="_blank" rel="noopener">CIO</a><span class="url">cio.com</span></li>
+      <li><a href="http://www.weiboreach.com/" target="_blank" rel="noopener">知微</a><span class="url">weiboreach.com</span></li>
+      <li><a href="http://bosonnlp.com/" target="_blank" rel="noopener">中文分词</a><span class="url">bosonnlp.com</span></li>
+      <li><a href="http://www.afenxi.com/" target="_blank" rel="noopener">数据分析网</a><span class="url">afenxi.com</span></li>
+      <li><a href="http://cos.name/" target="_blank" rel="noopener">统计之都</a><span class="url">cos.name</span></li>
+      <li><a href="http://www.data.gov/" target="_blank" rel="noopener">Data.gov</a><span class="url">data.gov</span></li>
+      <li><a href="https://aws.amazon.com/cn/public-datasets/" target="_blank" rel="noopener">亚马逊的公用数据集</a><span class="url">aws.amazon.com</span></li>
+      <li><a href="https://datahub.io" target="_blank" rel="noopener">Datahub</a><span class="url">datahub.io</span></li>
+      <li><a href="https://www.dataversity.net/" target="_blank" rel="noopener">dataversity</a><span class="url">dataversity.net</span></li>
+      <li><a href="http://arxiv.org/" target="_blank" rel="noopener">Cornell University Library（arXiv）</a><span class="url">arxiv.org</span></li>
+      <li><a href="http://openstd.samr.gov.cn/bzgk/gb/index" target="_blank" rel="noopener">国家标准全文公开</a><span class="url">openstd.samr.gov.cn</span></li>
+      <li><a href="https://www.biaozhun.org/" target="_blank" rel="noopener">标准网</a><span class="url">biaozhun.org</span></li>
+      <li><a href="http://www.jianbiaoku.com/" target="_blank" rel="noopener">建标库</a><span class="url">jianbiaoku.com</span></li>
+      <li><a href="https://www.hanspub.org/" target="_blank" rel="noopener">汉斯-开源期刊学术交流平台</a><span class="url">hanspub.org</span></li>
+      <li><a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank" rel="noopener">The Elements of Statistical Learning</a><span class="url">web.stanford.edu</span></li>
+      <li><a href="http://work.caltech.edu/telecourse.html" target="_blank" rel="noopener">加州理工学院的机器学习MOOC</a><span class="url">work.caltech.edu</span></li>
+      <li><a href="http://neuralnetworksanddeeplearning.com/" target="_blank" rel="noopener">Neural Networks and Deep Learning</a><span class="url">neuralnetworksanddeeplearning.com</span></li>
+      <li><a href="https://www.pixelstech.net/" target="_blank" rel="noopener">PixelsTech</a><span class="url">pixelstech.net</span></li>
+      <li><a href="https://ashishb.net/" target="_blank" rel="noopener">Ashishb.net</a><span class="url">ashishb.net</span></li>
+      <li><a href="https://www.talkingpoliticspodcast.com/" target="_blank" rel="noopener">Talking Politics</a><span class="url">talkingpoliticspodcast.com</span></li>
+      <li><a href="https://www.newstalk.com/" target="_blank" rel="noopener">newstalk</a><span class="url">newstalk.com</span></li>
+      <li><a href="https://tycat5.top/" target="_blank" rel="noopener">台风论坛</a><span class="url">tycat5.top</span></li>
+      <li><a href="http://mgov.cn/" target="_blank" rel="noopener">移动政务</a><span class="url">mgov.cn</span></li>
+    </ul>
+  </section>
+
+  <!-- 10 办公、效率与在线工具 -->
+  <section class="card" id="cat-10">
+    <div class="card-head"><span class="num">10</span><h2>办公、效率与在线工具</h2><span class="count">22</span></div>
+    <ul>
+      <li><a href="http://www.diaochapai.com/" target="_blank" rel="noopener">调查派</a><span class="url">diaochapai.com</span></li>
+      <li><a href="http://www.exceltip.net/" target="_blank" rel="noopener">EXCEL技巧网</a><span class="url">exceltip.net</span></li>
+      <li><a href="http://umr.igge.ga/" target="_blank" rel="noopener">万能查询和在线工具</a><span class="url">umr.igge.ga</span></li>
+      <li><a href="https://mp3cut.net/" target="_blank" rel="noopener">MP3在线切割</a><span class="url">mp3cut.net</span></li>
+      <li><a href="https://tuguoba.com" target="_blank" rel="noopener">Online document scanner</a><span class="url">tuguoba.com</span></li>
+      <li><a href="https://easychuan.cn/" target="_blank" rel="noopener">局域网传文件</a><span class="url">easychuan.cn</span></li>
+      <li><a href="https://sharedrop.io/" target="_blank" rel="noopener">sharedrop</a><span class="url">sharedrop.io</span></li>
+      <li><a href="https://www.qireader.com/" target="_blank" rel="noopener">Qireader-在线RSS阅读</a><span class="url">qireader.com</span></li>
+      <li><a href="https://rsshub-doc.pages.dev" target="_blank" rel="noopener">RSSHub</a><span class="url">rsshub-doc.pages.dev</span></li>
+      <li><a href="https://tempail.com/en/" target="_blank" rel="noopener">Temp Mail</a><span class="url">tempail.com</span></li>
+      <li><a href="https://pushtokindle.fivefilters.org/" target="_blank" rel="noopener">网页文章推送到 kindle</a><span class="url">pushtokindle.fivefilters.org</span></li>
+      <li><a href="https://greasyfork.org/zh-TW" target="_blank" rel="noopener">油猴脚本搜索下载</a><span class="url">greasyfork.org</span></li>
+      <li><a href="http://chromecj.com/" target="_blank" rel="noopener">Chrome插件下载</a><span class="url">chromecj.com</span></li>
+      <li><a href="http://insxz.com/" target="_blank" rel="noopener">在线视频下载</a><span class="url">insxz.com</span></li>
+      <li><a href="http://www.nch.com.au/" target="_blank" rel="noopener">软件下载－国外站点</a><span class="url">nch.com.au</span></li>
+      <li><a href="https://www.mp3juices.cc/" target="_blank" rel="noopener">mp3音乐下载</a><span class="url">mp3juices.cc</span></li>
+      <li><a href="https://www.hifihi.com/" target="_blank" rel="noopener">音乐 download</a><span class="url">hifihi.com</span></li>
+      <li><a href="https://music.lzmhhh.com/" target="_blank" rel="noopener">在线听音乐</a><span class="url">music.lzmhhh.com</span></li>
+      <li><a href="https://www.google-hub.com/" target="_blank" rel="noopener">谷歌hub</a><span class="url">google-hub.com</span></li>
+      <li><a href="https://www.chiphell.com/" target="_blank" rel="noopener">chiphell</a><span class="url">chiphell.com</span></li>
+      <li><a href="https://laidazi.com/" target="_blank" rel="noopener">巧手打字通</a><span class="url">laidazi.com</span></li>
+      <li><a href="https://www.typelit.io/" target="_blank" rel="noopener">typelit-英文小说打字练习</a><span class="url">typelit.io</span></li>
+    </ul>
+  </section>
+
+  <!-- 11 生活、文化与其他 -->
+  <section class="card" id="cat-11">
+    <div class="card-head"><span class="num">11</span><h2>生活、文化与其他</h2><span class="count">30</span></div>
+    <ul>
+      <li><a href="http://www.a-hospital.com/" target="_blank" rel="noopener">医药百科</a><span class="url">a-hospital.com</span></li>
+      <li><a href="http://drugs.dxy.cn/" target="_blank" rel="noopener">用药助手</a><span class="url">drugs.dxy.cn</span></li>
+      <li><a href="https://isurethis.com/" target="_blank" rel="noopener">艾妃医生</a><span class="url">isurethis.com</span></li>
+      <li><a href="http://www.chongbuluo.com/" target="_blank" rel="noopener">虫部落（搜索集合）</a><span class="url">chongbuluo.com</span></li>
+      <li><a href="http://1nami.com/" target="_blank" rel="noopener">1纳米学习导航</a><span class="url">1nami.com</span></li>
+      <li><a href="http://dh.woshipm.com/" target="_blank" rel="noopener">产品经理导航</a><span class="url">dh.woshipm.com</span></li>
+      <li><a href="https://www.yac8.com/" target="_blank" rel="noopener">书法欣赏</a><span class="url">yac8.com</span></li>
+      <li><a href="https://www.shufazidian.com/" target="_blank" rel="noopener">书法字典</a><span class="url">shufazidian.com</span></li>
+      <li><a href="https://www.9610.com/" target="_blank" rel="noopener">书法空间</a><span class="url">9610.com</span></li>
+      <li><a href="https://shufadao.com" target="_blank" rel="noopener">书法道</a><span class="url">shufadao.com</span></li>
+      <li><a href="http://hanmofengya.com/" target="_blank" rel="noopener">翰墨观雅</a><span class="url">hanmofengya.com</span></li>
+      <li><a href="https://www.cidianwang.com/" target="_blank" rel="noopener">词典网</a><span class="url">cidianwang.com</span></li>
+      <li><a href="http://www.gaoxiaogif.com/" target="_blank" rel="noopener">搞笑gif</a><span class="url">gaoxiaogif.com</span></li>
+      <li><a href="https://8zt.cc/" target="_blank" rel="noopener">毒鸡汤</a><span class="url">8zt.cc</span></li>
+      <li><a href="https://lovelive.tools/" target="_blank" rel="noopener">渣男：说话的艺术</a><span class="url">lovelive.tools</span></li>
+      <li><a href="http://www.daorenjia.com/" target="_blank" rel="noopener">道人家</a><span class="url">daorenjia.com</span></li>
+      <li><a href="http://d.sundx.cn/" target="_blank" rel="noopener">时光印记经典珍藏系列</a><span class="url">d.sundx.cn</span></li>
+      <li><a href="https://www.marxists.org/chinese/index.html" target="_blank" rel="noopener">中文马克思主义文库</a><span class="url">marxists.org</span></li>
+      <li><a href="https://www.timeout.com/" target="_blank" rel="noopener">Time out</a><span class="url">timeout.com</span></li>
+      <li><a href="https://www.commonsensemedia.org/" target="_blank" rel="noopener">common sense media</a><span class="url">commonsensemedia.org</span></li>
+      <li><a href="https://ikuuu.co" target="_blank" rel="noopener">ikuuu</a><span class="url">ikuuu.co</span></li>
+      <li><a href="https://ikuuu.club/" target="_blank" rel="noopener">ikuuu club</a><span class="url">ikuuu.club</span></li>
+      <li><a href="https://ikuuu.cc/" target="_blank" rel="noopener">ikuuu cc</a><span class="url">ikuuu.cc</span></li>
+    </ul>
+  </section>
+
+</div><!-- /grid -->
+</main>
+<footer>
+  共有 <strong id="bookmark-count">—</strong> 个书签
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var count = document.querySelectorAll('.card ul li').length;
+    document.getElementById('bookmark-count').textContent = count;
+  });
+</script>
+</body>
+</html>
